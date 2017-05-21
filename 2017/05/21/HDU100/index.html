@@ -3,17 +3,19 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Arkiv: 2017/5 | Q同學&#39;s world</title>
+  <title>HDU练习积累  | Q同學&#39;s world</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Make a diffence">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Q同學's world">
-<meta property="og:url" content="http://yoursite.com/archives/2017/05/index.html">
+  <meta name="description" content="1.12字符反转：Sample Input3olleh !dlrowm’I morf .udhI ekil .mca Sample Outputhello world!I’m from hdu.I like acm.好久没有用 STL ，于是想到了string 数组的使用 ，还有reverse（s.begin(),s.end()）,发现不行 ， 在这个题里 没法控制 流 ；（得看看流的那部分了）。">
+<meta name="keywords">
+<meta property="og:type" content="article">
+<meta property="og:title" content="HDU练习积累 ">
+<meta property="og:url" content="http://yoursite.com/2017/05/21/HDU100/index.html">
 <meta property="og:site_name" content="Q同學's world">
-<meta property="og:description" content="Make a diffence">
+<meta property="og:description" content="1.12字符反转：Sample Input3olleh !dlrowm’I morf .udhI ekil .mca Sample Outputhello world!I’m from hdu.I like acm.好久没有用 STL ，于是想到了string 数组的使用 ，还有reverse（s.begin(),s.end()）,发现不行 ， 在这个题里 没法控制 流 ；（得看看流的那部分了）。">
+<meta property="og:updated_time" content="2017-05-21T05:55:06.345Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Q同學's world">
-<meta name="twitter:description" content="Make a diffence">
+<meta name="twitter:title" content="HDU练习积累 ">
+<meta name="twitter:description" content="1.12字符反转：Sample Input3olleh !dlrowm’I morf .udhI ekil .mca Sample Outputhello world!I’m from hdu.I like acm.好久没有用 STL ，于是想到了string 数组的使用 ，还有reverse（s.begin(),s.end()）,发现不行 ， 在这个题里 没法控制 流 ；（得看看流的那部分了）。">
   
     <link rel="alternate" href="/atom.xml" title="Q同學&#39;s world" type="application/atom+xml">
   
@@ -66,96 +68,83 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main">
-  
-  
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2017" class="archive-year">2017</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2017/05/21/HDU100/" class="archive-article-date">
-  <time datetime="2017-05-21T05:48:24.000Z" itemprop="datePublished">May 21</time>
+        <section id="main"><article id="post-HDU100" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2017/05/21/HDU100/" class="article-date">
+  <time datetime="2017-05-21T05:48:24.000Z" itemprop="datePublished">2017-05-21</time>
 </a>
-      
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/05/21/HDU100/">HDU练习积累 </a>
+    <h1 class="article-title" itemprop="name">
+      HDU练习积累 
     </h1>
   
 
-    </header>
-  </div>
-</article>
-  
+      </header>
     
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2017/05/14/SUN/" class="archive-article-date">
-  <time datetime="2017-05-14T13:24:49.000Z" itemprop="datePublished">May 14</time>
-</a>
+    <div class="article-entry" itemprop="articleBody">
       
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/05/14/SUN/">SUN</a>
-    </h1>
-  
+        <p>1.12<br>字符反转：<br>Sample Input<br>3<br>olleh !dlrow<br>m’I morf .udh<br>I ekil .mca</p>
+<p>Sample Output<br>hello world!<br>I’m from hdu.<br>I like acm.<br>好久没有用 STL ，于是想到了string 数组的使用 ，还有reverse（s.begin(),s.end()）,<br>发现不行 ， 在这个题里 没法控制 流 ；（得看看流的那部分了）。<br>方法1：用char[] 数组 。<br>方法2：用栈做（因为先进后出，和栈非常类似）// 拓宽思路</p>
+<p>方法一：</p>
+<p>#if 0 </p>
+<p>#include<bits stdc++.h=""><br>using namespace std;<br>int main()<br>{<br>    char s[1001], s1[1001];<br>    int len, i, j, p;<br>    int n ;<br>    cin&gt;&gt;n;</bits></p>
+<pre><code>getchar();
 
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2017/05/08/sorting/" class="archive-article-date">
-  <time datetime="2017-05-08T15:06:37.000Z" itemprop="datePublished">May 8</time>
-</a>
+while(n--)
+{
+    gets(s); 
+ len=strlen(s);
+ for(i=0,j=0; i&lt;len; i++)
+ {
+     if(s[i]!=&apos; &apos;)
+     s1[j++]=s[i];
+     else
+ {
+   for(p=j-1; p&gt;=0; p--)
+      cout&lt;&lt;s1[p];
+       cout &lt;&lt;&quot; &quot;;
+       j=0;
+  }
+ }
+     for(p=j-1; p&gt;=0; p--)
+    cout &lt;&lt;s1[p];
+    cout &lt;&lt; endl; 
+}    
+</code></pre><p>}</p>
+
       
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/05/08/sorting/">sorting</a>
-    </h1>
-  
-
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2017/05/07/KFL/" class="archive-article-date">
-  <time datetime="2017-05-07T06:40:24.000Z" itemprop="datePublished">May 7</time>
-</a>
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2017/05/21/HDU100/" data-id="cj2yah1tu0000c0vwn0jnmpy7" class="article-share-link">Share</a>
       
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/05/07/KFL/">Make a difference</a>
-    </h1>
-  
-
-    </header>
+      
+    </footer>
   </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2017/05/14/SUN/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          SUN
+        
+      </div>
+    </a>
+  
+  
+</nav>
+
+  
 </article>
-  
-  
-    </div></section>
-  
 
 </section>
         
