@@ -68,6 +68,44 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-postMath" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2017/05/29/postMath/" class="article-date">
+  <time datetime="2017-05-29T14:50:38.000Z" itemprop="datePublished">2017-05-29</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/05/29/postMath/">数学</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>神造数学，人造机器</p>
+<h4 id="Math："><a href="#Math：" class="headerlink" title="Math："></a>Math：</h4><p>1.leftmost digit<br>输入一个1-1亿 任何一个数字，输出 n^n 最左边的数字；<br>例如n=3; 3^3=27, 那么输出2;<br>思路：<br>对于任何一个num 都有 a<em>10^n;（科学计数）<br>一个数的最左边的数就是a的整数部分。<br>所以num^num=a</em>10^n 开 log得num*lg(num)=lg(a)+n,这里a由于小于10，lg(a)小于1，是小数；<br>令x=lg(a)+n; 那么 a=10^(x-n),因为lg(a)小数，所以n=int(x),<br>所以 a=10^(x-int(x)).<br>然后a 取整就好了。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2017/05/29/postMath/" data-id="cj3a9akra0000c0vwbgc1cejc" class="article-share-link">Partager</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-HDU100" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2017/05/21/HDU100/" class="article-date">
@@ -330,6 +368,10 @@ while(n--)
       <ul>
         
           <li>
+            <a href="/2017/05/29/postMath/">数学</a>
+          </li>
+        
+          <li>
             <a href="/2017/05/21/HDU100/">HDU练习积累 </a>
           </li>
         
@@ -343,10 +385,6 @@ while(n--)
         
           <li>
             <a href="/2017/04/20/STSRT/">STSRT</a>
-          </li>
-        
-          <li>
-            <a href="/2017/04/20/article-title/">Wellcomme to zeroker&#39;s world</a>
           </li>
         
       </ul>
