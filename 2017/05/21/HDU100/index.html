@@ -12,7 +12,7 @@
 <meta property="og:url" content="http://yoursite.com/2017/05/21/HDU100/index.html">
 <meta property="og:site_name" content="Q同學's world">
 <meta property="og:description" content="1.12字符反转：Sample Input3olleh !dlrowm’I morf .udhI ekil .mca Sample Outputhello world!I’m from hdu.I like acm.好久没有用 STL ，于是想到了string 数组的使用 ，还有reverse（s.begin(),s.end()）,发现不行 ， 在这个题里 没法控制 流 ；（得看看流的那部分了）。">
-<meta property="og:updated_time" content="2017-11-09T08:04:32.641Z">
+<meta property="og:updated_time" content="2017-11-09T08:07:11.461Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="HDU练习积累 ">
 <meta name="twitter:description" content="1.12字符反转：Sample Input3olleh !dlrowm’I morf .udhI ekil .mca Sample Outputhello world!I’m from hdu.I like acm.好久没有用 STL ，于是想到了string 数组的使用 ，还有reverse（s.begin(),s.end()）,发现不行 ， 在这个题里 没法控制 流 ；（得看看流的那部分了）。">
@@ -92,10 +92,18 @@
       
         <p>1.12<br>字符反转：<br>Sample Input<br>3<br>olleh !dlrow<br>m’I morf .udh<br>I ekil .mca</p>
 <p>Sample Output<br>hello world!<br>I’m from hdu.<br>I like acm.<br>好久没有用 STL ，于是想到了string 数组的使用 ，还有reverse（s.begin(),s.end()）,<br>发现不行 ， 在这个题里 没法控制 流 ；（得看看流的那部分了）。<br>方法1：用char[] 数组 。<br>方法2：用栈做（因为先进后出，和栈非常类似）// 拓宽思路</p>
-<p>`&lt;方法一：</p>
-<p>#if 0 </p>
-<p>#include<bits stdc++.h=""><br>using namespace std;<br>int main()<br>{<br>    char s[1001], s1[1001];<br>    int len, i, j, p;<br>    int n ;<br>    cin&gt;&gt;n;</bits></p>
-<pre><code>getchar();
+<p>方法一：</p>
+<pre><code>#if 0 
+#include&lt;bits/stdc++.h&gt;
+using namespace std;
+int main() 
+{
+char s[1001], s1[1001];
+int len, i, j, p;
+int n ;
+cin&gt;&gt;n;
+
+getchar();
 
 while(n--)
 {
@@ -117,7 +125,7 @@ while(n--)
     cout &lt;&lt;s1[p];
     cout &lt;&lt; endl; 
 }    
-</code></pre><p>}&gt;`</p>
+</code></pre><p>}</p>
 
       
     </div>
