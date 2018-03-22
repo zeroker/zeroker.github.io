@@ -3,19 +3,19 @@
 <head>
   <meta charset="utf-8">
   
-  <title>HDU练习积累  | Q同學&#39;s world</title>
+  <title>Git | Q同學&#39;s world</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="1.12字符反转：Sample Input3olleh !dlrowm’I morf .udhI ekil .mca Sample Outputhello world!I’m from hdu.I like acm.好久没有用 STL ，于是想到了string 数组的使用 ，还有reverse（s.begin(),s.end()）,发现不行 ， 在这个题里 没法控制 流 ；（得看看流的那部分了）。">
+  <meta name="description" content="##Hello 好长时间没有用github了，都不会用了，坑！ 打开Gitbash发现找不到nodejs，什么鬼？–简单百度了一下，发现把环境变量给改了,so-=。 ##简单的几条指令：hexo post “the name of the file”然后用submit打开这个文件开始编辑就ok了然而啊Markdo的语法——&amp;gt;biubiubiu [Markdown]（https://www.j">
 <meta name="keywords">
 <meta property="og:type" content="article">
-<meta property="og:title" content="HDU练习积累 ">
-<meta property="og:url" content="http://yoursite.com/2017/05/21/HDU100/index.html">
+<meta property="og:title" content="Git">
+<meta property="og:url" content="http://yoursite.com/2018/03/22/Git/index.html">
 <meta property="og:site_name" content="Q同學's world">
-<meta property="og:description" content="1.12字符反转：Sample Input3olleh !dlrowm’I morf .udhI ekil .mca Sample Outputhello world!I’m from hdu.I like acm.好久没有用 STL ，于是想到了string 数组的使用 ，还有reverse（s.begin(),s.end()）,发现不行 ， 在这个题里 没法控制 流 ；（得看看流的那部分了）。">
-<meta property="og:updated_time" content="2017-11-09T08:18:31.591Z">
+<meta property="og:description" content="##Hello 好长时间没有用github了，都不会用了，坑！ 打开Gitbash发现找不到nodejs，什么鬼？–简单百度了一下，发现把环境变量给改了,so-=。 ##简单的几条指令：hexo post “the name of the file”然后用submit打开这个文件开始编辑就ok了然而啊Markdo的语法——&amp;gt;biubiubiu [Markdown]（https://www.j">
+<meta property="og:updated_time" content="2018-03-22T15:51:50.391Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="HDU练习积累 ">
-<meta name="twitter:description" content="1.12字符反转：Sample Input3olleh !dlrowm’I morf .udhI ekil .mca Sample Outputhello world!I’m from hdu.I like acm.好久没有用 STL ，于是想到了string 数组的使用 ，还有reverse（s.begin(),s.end()）,发现不行 ， 在这个题里 没法控制 流 ；（得看看流的那部分了）。">
+<meta name="twitter:title" content="Git">
+<meta name="twitter:description" content="##Hello 好长时间没有用github了，都不会用了，坑！ 打开Gitbash发现找不到nodejs，什么鬼？–简单百度了一下，发现把环境变量给改了,so-=。 ##简单的几条指令：hexo post “the name of the file”然后用submit打开这个文件开始编辑就ok了然而啊Markdo的语法——&amp;gt;biubiubiu [Markdown]（https://www.j">
   
     <link rel="alternate" href="/atom.xml" title="Q同學&#39;s world" type="application/atom+xml">
   
@@ -68,10 +68,10 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main"><article id="post-HDU100" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-Git" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2017/05/21/HDU100/" class="article-date">
-  <time datetime="2017-05-21T05:48:24.000Z" itemprop="datePublished">2017-05-21</time>
+    <a href="/2018/03/22/Git/" class="article-date">
+  <time datetime="2018-03-22T15:24:01.000Z" itemprop="datePublished">2018-03-22</time>
 </a>
     
   </div>
@@ -82,7 +82,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      HDU练习积累 
+      Git
     </h1>
   
 
@@ -90,45 +90,14 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>1.12<br>字符反转：<br>Sample Input<br>3<br>olleh !dlrow<br>m’I morf .udh<br>I ekil .mca</p>
-<p>Sample Output<br>hello world!<br>I’m from hdu.<br>I like acm.<br>好久没有用 STL ，于是想到了string 数组的使用 ，还有reverse（s.begin(),s.end()）,<br>发现不行 ， 在这个题里 没法控制 流 ；（得看看流的那部分了）。<br>方法1：用char[] 数组 。<br>方法2：用栈做（因为先进后出，和栈非常类似）// 拓宽思路</p>
-<p>方法一：</p>
-<pre><code>#if 0 
-#include&lt;bits/stdc++.h&gt;
-using namespace std;
-int main() 
-{
-    char s[1001], s1[1001];
-    int len, i, j, p;
-    int n ;
-    cin&gt;&gt;n;
-    getchar();
-    while(n--)
-    {
-        gets(s); 
-         len=strlen(s);
-         for(i=0,j=0; i&lt;len; i++)
-         {
-             if(s[i]!=&apos; &apos;)
-                 s1[j++]=s[i];
-             else
-             {
-                   for(p=j-1; p&gt;=0; p--)
-                      cout&lt;&lt;s1[p];
-                   cout &lt;&lt;&quot; &quot;;
-                   j=0;                     
-              }
-         }
-         for(p=j-1; p&gt;=0; p--)
-            cout &lt;&lt;s1[p];
-        cout &lt;&lt; endl; 
-    }    
-}
-</code></pre>
+        <p>##Hello<br> 好长时间没有用github了，都不会用了，坑！<br> 打开Gitbash发现找不到nodejs，什么鬼？–简单百度了一下，发现把环境变量给改了,so-=。</p>
+<p>##简单的几条指令：<br>hexo post “the name of the file”<br>然后用submit打开这个文件开始编辑就ok了<br>然而啊Markdo的语法——&gt;biubiubiu [Markdown]（<a href="https://www.jianshu.com/p/b03a8d7b1719）{：target=&quot;_blank&quot;}" target="_blank" rel="external">https://www.jianshu.com/p/b03a8d7b1719）{：target=&quot;_blank&quot;}</a><br>先简单的看一下别人的，过两天总结一下markdown的用法，</p>
+<p>逛了逛了Github,才发现代码的天空还是那么蓝,所以Hello world.</p>
+
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/05/21/HDU100/" data-id="cjf2p3d2k0000fgvwspip5ger" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/03/22/Git/" data-id="cjf2p3d3g0001fgvwo5uoaj7x" class="article-share-link">Share</a>
       
       
     </footer>
@@ -137,20 +106,15 @@ int main()
     
 <nav id="article-nav">
   
-    <a href="/2017/05/07/KFL/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2017/05/31/Mywords/" id="article-nav-newer" class="article-nav-link-wrap">
       <strong class="article-nav-caption">Newer</strong>
       <div class="article-nav-title">
         
-          Make a difference
+          New
         
       </div>
     </a>
   
-  
-    <a href="/2017/05/29/postMath/" id="article-nav-older" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Older</strong>
-      <div class="article-nav-title">数学</div>
-    </a>
   
 </nav>
 
