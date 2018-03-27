@@ -3,19 +3,19 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Wellcomme to zeroker&#39;s world | Q同學&#39;s world</title>
+  <title>HDU练习积累  | Q同學&#39;s world</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="姓名：邱治凯      学校：      专业：计算机      git:zeroker      qq：">
-<meta name="keywords" content="touch the world">
+  <meta name="description" content="1.12字符反转：Sample Input3olleh !dlrowm’I morf .udhI ekil .mca Sample Outputhello world!I’m from hdu.I like acm.好久没有用 STL ，于是想到了string 数组的使用 ，还有reverse（s.begin(),s.end()）,发现不行 ， 在这个题里 没法控制 流 ；（得看看流的那部分了）。">
+<meta name="keywords">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Wellcomme to zeroker's world">
-<meta property="og:url" content="http://yoursite.com/2017/04/20/article-title/index.html">
+<meta property="og:title" content="HDU练习积累 ">
+<meta property="og:url" content="http://yoursite.com/2017/05/21/算法题积累/index.html">
 <meta property="og:site_name" content="Q同學's world">
-<meta property="og:description" content="姓名：邱治凯      学校：      专业：计算机      git:zeroker      qq：">
-<meta property="og:updated_time" content="2017-11-09T07:49:46.443Z">
+<meta property="og:description" content="1.12字符反转：Sample Input3olleh !dlrowm’I morf .udhI ekil .mca Sample Outputhello world!I’m from hdu.I like acm.好久没有用 STL ，于是想到了string 数组的使用 ，还有reverse（s.begin(),s.end()）,发现不行 ， 在这个题里 没法控制 流 ；（得看看流的那部分了）。">
+<meta property="og:updated_time" content="2017-11-09T08:18:31.591Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Wellcomme to zeroker's world">
-<meta name="twitter:description" content="姓名：邱治凯      学校：      专业：计算机      git:zeroker      qq：">
+<meta name="twitter:title" content="HDU练习积累 ">
+<meta name="twitter:description" content="1.12字符反转：Sample Input3olleh !dlrowm’I morf .udhI ekil .mca Sample Outputhello world!I’m from hdu.I like acm.好久没有用 STL ，于是想到了string 数组的使用 ，还有reverse（s.begin(),s.end()）,发现不行 ， 在这个题里 没法控制 流 ；（得看看流的那部分了）。">
   
     <link rel="alternate" href="/atom.xml" title="Q同學&#39;s world" type="application/atom+xml">
   
@@ -57,9 +57,9 @@
       </nav>
       <nav id="sub-nav">
         
-          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="Flux RSS"></a>
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
         
-        <a id="nav-search-btn" class="nav-icon" title="Rechercher"></a>
+        <a id="nav-search-btn" class="nav-icon" title="Zoeken"></a>
       </nav>
       <div id="search-form-wrap">
         <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
@@ -68,10 +68,10 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main"><article id="post-article-title" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-算法题积累" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2017/04/20/article-title/" class="article-date">
-  <time datetime="2017-04-20T11:47:07.000Z" itemprop="datePublished">2017-04-20</time>
+    <a href="/2017/05/21/算法题积累/" class="article-date">
+  <time datetime="2017-05-21T05:48:24.000Z" itemprop="datePublished">2017-05-21</time>
 </a>
     
   </div>
@@ -82,7 +82,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      Wellcomme to zeroker&#39;s world
+      HDU练习积累 
     </h1>
   
 
@@ -90,26 +90,66 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p> 姓名：邱治凯<br>      学校：<br>      专业：计算机<br>      git:zeroker<br>      qq：</p>
-
+        <p>1.12<br>字符反转：<br>Sample Input<br>3<br>olleh !dlrow<br>m’I morf .udh<br>I ekil .mca</p>
+<p>Sample Output<br>hello world!<br>I’m from hdu.<br>I like acm.<br>好久没有用 STL ，于是想到了string 数组的使用 ，还有reverse（s.begin(),s.end()）,<br>发现不行 ， 在这个题里 没法控制 流 ；（得看看流的那部分了）。<br>方法1：用char[] 数组 。<br>方法2：用栈做（因为先进后出，和栈非常类似）// 拓宽思路</p>
+<p>方法一：</p>
+<pre><code>#if 0 
+#include&lt;bits/stdc++.h&gt;
+using namespace std;
+int main() 
+{
+    char s[1001], s1[1001];
+    int len, i, j, p;
+    int n ;
+    cin&gt;&gt;n;
+    getchar();
+    while(n--)
+    {
+        gets(s); 
+         len=strlen(s);
+         for(i=0,j=0; i&lt;len; i++)
+         {
+             if(s[i]!=&apos; &apos;)
+                 s1[j++]=s[i];
+             else
+             {
+                   for(p=j-1; p&gt;=0; p--)
+                      cout&lt;&lt;s1[p];
+                   cout &lt;&lt;&quot; &quot;;
+                   j=0;                     
+              }
+         }
+         for(p=j-1; p&gt;=0; p--)
+            cout &lt;&lt;s1[p];
+        cout &lt;&lt; endl; 
+    }    
+}
+</code></pre>
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/04/20/article-title/" data-id="cjf5jkwsa0006xgvws77eh2c8" class="article-share-link">Partager</a>
+      <a data-url="http://yoursite.com/2017/05/21/算法题积累/" data-id="cjf9l33x50004r0vwtmovtayc" class="article-share-link">Delen</a>
       
       
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/touch-the-world/">touch the world</a></li></ul>
-
     </footer>
   </div>
   
     
 <nav id="article-nav">
   
+    <a href="/2017/05/07/Reader/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Nieuwer</strong>
+      <div class="article-nav-title">
+        
+          Make a difference
+        
+      </div>
+    </a>
   
-    <a href="/2017/04/20/Start_rote/" id="article-nav-older" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Ancien</strong>
-      <div class="article-nav-title">STSRT</div>
+  
+    <a href="/2017/05/29/算法/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Ouder</strong>
+      <div class="article-nav-title">数学</div>
     </a>
   
 </nav>
@@ -126,7 +166,7 @@
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Mot-clés</h3>
+    <h3 class="widget-title">Labels</h3>
     <div class="widget">
       <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/touch-the-world/">touch the world</a></li></ul>
     </div>
@@ -136,7 +176,7 @@
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Nuage de mot-clés</h3>
+    <h3 class="widget-title">Tag Cloud</h3>
     <div class="widget tagcloud">
       <a href="/tags/touch-the-world/" style="font-size: 10px;">touch the world</a>
     </div>
@@ -145,7 +185,7 @@
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Archives</h3>
+    <h3 class="widget-title">Archieven</h3>
     <div class="widget">
       <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/03/">March 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/05/">May 2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/04/">April 2017</a></li></ul>
     </div>
@@ -155,7 +195,7 @@
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Articles récents</h3>
+    <h3 class="widget-title">Recente berichten</h3>
     <div class="widget">
       <ul>
         
@@ -168,15 +208,15 @@
           </li>
         
           <li>
-            <a href="/2017/05/31/Mywords/">dity</a>
+            <a href="/2017/05/31/Dirty/">dity</a>
           </li>
         
           <li>
-            <a href="/2017/05/29/postMath/">数学</a>
+            <a href="/2017/05/29/算法/">数学</a>
           </li>
         
           <li>
-            <a href="/2017/05/21/HDU100/">HDU练习积累 </a>
+            <a href="/2017/05/21/算法题积累/">HDU练习积累 </a>
           </li>
         
       </ul>
@@ -192,7 +232,7 @@
   <div class="outer">
     <div id="footer-info" class="inner">
       &copy; 2018 zhikaiQ<br>
-      Propulsé by <a href="http://hexo.io/" target="_blank">Hexo</a>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
     </div>
   </div>
 </footer>
