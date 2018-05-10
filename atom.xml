@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-05-10T08:32:46.610Z</updated>
+  <updated>2018-05-10T14:39:48.135Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,26 +17,45 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>个人简介</title>
-    <link href="http://yoursite.com/2017/04/20/%E4%B8%AA%E4%BA%BA%E7%AE%80%E4%BB%8B/"/>
-    <id>http://yoursite.com/2017/04/20/个人简介/</id>
-    <published>2017-04-20T11:47:07.000Z</published>
-    <updated>2018-05-10T08:32:46.610Z</updated>
+    <title>Git和Marddown的小用法</title>
+    <link href="http://yoursite.com/2018/03/22/Git+Markdown/"/>
+    <id>http://yoursite.com/2018/03/22/Git+Markdown/</id>
+    <published>2018-03-22T15:24:01.000Z</published>
+    <updated>2018-05-10T14:39:48.135Z</updated>
     
-    <content type="html"><![CDATA[<p> 姓名：邱治凯<br>      学校：<br>      专业：计算机<br>      git:zeroker<br>      qq：</p>]]></content>
+    <content type="html"><![CDATA[<h2 id="Hello"><a href="#Hello" class="headerlink" title="Hello"></a>Hello</h2><pre><code>千里之行，始于足下</code></pre><h3 id="简单的用于博客的指令："><a href="#简单的用于博客的指令：" class="headerlink" title="简单的用于博客的指令："></a>简单的用于博客的指令：</h3><p>hexo post “the name of the file”<br>hexo g 部署<br>hexo s<br>hexo s –debug<br>hexo d<br>hexo d -g</p><h3 id="Markdown"><a href="#Markdown" class="headerlink" title="Markdown"></a>Markdown</h3><p>1.标题设置：</p><p>#字符用于控制标题大小 （一级也就是一个#最大）<br>2.块注释：（blockquote）</p><blockquote><blockquote><p>通过在文字开头添加“&gt;”表示块注释</p></blockquote></blockquote><p>3.斜体： 将需要设置为斜体的文字两端使用1个星号 或者 “<em>“夹起来 <em>@zeroker</em><br>4.粗体：<br>将需要设置为斜体的文字两端使用2个”*”或者”</em>“夹起来  <strong>@zeroker</strong><br>5.链接：<br>内联方式：This is an [注释] (url).<br>6.图片：<br>! [alt text] [id]</p>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;p&gt; 姓名：邱治凯&lt;br&gt;      学校：&lt;br&gt;      专业：计算机&lt;br&gt;      git:zeroker&lt;br&gt;      qq：&lt;/p&gt;
-
+        &lt;h2 id=&quot;Hello&quot;&gt;&lt;a href=&quot;#Hello&quot; class=&quot;headerlink&quot; title=&quot;Hello&quot;&gt;&lt;/a&gt;Hello&lt;/h2&gt;&lt;pre&gt;&lt;code&gt;千里之行，始于足下
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&quot;简单的用于博客的指令：&quot;&gt;&lt;a hre
       
     
     </summary>
     
     
-      <category term="Hello world" scheme="http://yoursite.com/tags/Hello-world/"/>
+  </entry>
+  
+  <entry>
+    <title>博客搭建教程</title>
+    <link href="http://yoursite.com/2017/04/20/%E6%95%99%E7%A8%8B/"/>
+    <id>http://yoursite.com/2017/04/20/教程/</id>
+    <published>2017-04-20T12:53:32.000Z</published>
+    <updated>2018-05-10T14:40:35.998Z</updated>
+    
+    <content type="html"><![CDATA[<p> exciting AND 因吹斯汀 。<br>点击-&gt;<a href="http://blog.csdn.net/gdutxiaoxu/article/details/53576018" target="_blank" rel="external">教程</a><br>点击-&gt;<a href="http://www.cnblogs.com/hnrainll/p/3514637.html" target="_blank" rel="external">markdow语法</a><br>点击-&gt;<a href="https://jingyan.baidu.com/article/a17d528533aa828099c8f273.html" target="_blank" rel="external">window10快捷键</a></p><p>Open the world–&gt;<a href="http://community.topcoder.com/tc" target="_blank" rel="external">topcoder</a><br>open the world–&gt;<a href="http://codeforces.com/" target="_blank" rel="external">codeforces</a></p><p><img src="/images/01.jpg" alt="R" title="T"></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt; exciting AND 因吹斯汀 。&lt;br&gt;点击-&amp;gt;&lt;a href=&quot;http://blog.csdn.net/gdutxiaoxu/article/details/53576018&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;教程&lt;/a&gt;&lt;b
+      
+    
+    </summary>
+    
     
   </entry>
   
