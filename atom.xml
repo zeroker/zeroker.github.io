@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Q同學&#39;s world</title>
+  
+  <subtitle>千里之行，始于足下</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://yoursite.com/"/>
+  <updated>2018-05-10T08:32:46.610Z</updated>
+  <id>http://yoursite.com/</id>
+  
+  <author>
+    <name>Q-同學</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>个人简介</title>
+    <link href="http://yoursite.com/2017/04/20/%E4%B8%AA%E4%BA%BA%E7%AE%80%E4%BB%8B/"/>
+    <id>http://yoursite.com/2017/04/20/个人简介/</id>
+    <published>2017-04-20T11:47:07.000Z</published>
+    <updated>2018-05-10T08:32:46.610Z</updated>
+    
+    <content type="html"><![CDATA[<p> 姓名：邱治凯<br>      学校：<br>      专业：计算机<br>      git:zeroker<br>      qq：</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt; 姓名：邱治凯&lt;br&gt;      学校：&lt;br&gt;      专业：计算机&lt;br&gt;      git:zeroker&lt;br&gt;      qq：&lt;/p&gt;
+
+      
+    
+    </summary>
+    
+    
+      <category term="Hello world" scheme="http://yoursite.com/tags/Hello-world/"/>
+    
+  </entry>
+  
+</feed>
