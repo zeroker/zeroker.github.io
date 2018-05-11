@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-05-11T14:34:33.401Z</updated>
+  <updated>2018-05-11T14:56:38.912Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,30 +17,25 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>再尝试</title>
-    <link href="http://yoursite.com/2018/05/11/%E5%86%8D%E5%B0%9D%E8%AF%95/"/>
-    <id>http://yoursite.com/2018/05/11/再尝试/</id>
-    <published>2018-05-11T14:34:33.000Z</published>
-    <updated>2018-05-11T14:34:33.401Z</updated>
+    <title>next主题</title>
+    <link href="http://yoursite.com/2018/05/11/%E4%B8%BB%E9%A2%98/"/>
+    <id>http://yoursite.com/2018/05/11/主题/</id>
+    <published>2018-05-11T14:42:36.000Z</published>
+    <updated>2018-05-11T14:56:38.912Z</updated>
+    
+    <content type="html"><![CDATA[<p>  这两天比较了yilia和next主题，最后还是选择了自我感觉比较酷<br>next主题，从这中间也走了一些坑。<br>1.克隆下来的主题，从git上克隆下来了一个不是最新版本的就是比较伤的事情了，突然发现主题的语言变成了德文–？看到git日志才发现最新的git版本的url。<br>2.还有就是最初按照next官方文档配置的目录..发现官方文档也好久没有更新了，目录中的about、tags等都需要手动配置，拿about说一下，hexo new post”about”，然后在md里添加type: “about”，记得有空格啊。<br>3.不准备用分类了，直接用标签，感觉用起来会简约一些</p>]]></content>
     
     <summary type="html">
+    
+      
+      
+        &lt;p&gt;  这两天比较了yilia和next主题，最后还是选择了自我感觉比较酷&lt;br&gt;next主题，从这中间也走了一些坑。&lt;br&gt;1.克隆下来的主题，从git上克隆下来了一个不是最新版本的就是比较伤的事情了，突然发现主题的语言变成了德文–？看到git日志才发现最新的git版本的ur
+      
     
     </summary>
     
     
-  </entry>
-  
-  <entry>
-    <title>尝试中</title>
-    <link href="http://yoursite.com/2018/05/11/%E5%B0%9D%E8%AF%95%E4%B8%AD/"/>
-    <id>http://yoursite.com/2018/05/11/尝试中/</id>
-    <published>2018-05-11T14:31:03.000Z</published>
-    <updated>2018-05-11T14:31:03.106Z</updated>
-    
-    <summary type="html">
-    
-    </summary>
-    
+      <category term="杂谈" scheme="http://yoursite.com/tags/%E6%9D%82%E8%B0%88/"/>
     
   </entry>
   
