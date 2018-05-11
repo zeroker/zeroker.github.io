@@ -40,19 +40,19 @@
   </entry>
   
   <entry>
-    <title>Git和Marddown的小用法</title>
+    <title>Git和Markdown的小用法</title>
     <link href="http://yoursite.com/2018/03/22/Git+Markdown/"/>
     <id>http://yoursite.com/2018/03/22/Git+Markdown/</id>
     <published>2018-03-22T15:24:01.000Z</published>
-    <updated>2018-05-11T14:29:26.590Z</updated>
+    <updated>2018-05-11T15:12:57.530Z</updated>
     
-    <content type="html"><![CDATA[<h3 id="简单的用于博客的指令："><a href="#简单的用于博客的指令：" class="headerlink" title="简单的用于博客的指令："></a>简单的用于博客的指令：</h3><p>hexo post “the name of the file”<br>hexo g 部署<br>hexo s<br>hexo s –debug<br>hexo d<br>hexo d -g</p><h3 id="Markdown"><a href="#Markdown" class="headerlink" title="Markdown"></a>Markdown</h3><p>1.标题设置：</p><p>#字符用于控制标题大小 （一级也就是一个#最大）<br>2.块注释：（blockquote）</p><blockquote><blockquote><p>通过在文字开头添加“&gt;”表示块注释</p></blockquote></blockquote><p>3.斜体： 将需要设置为斜体的文字两端使用1个星号 或者 “<em>“夹起来 <em>@zeroker</em><br>4.粗体：<br>将需要设置为斜体的文字两端使用2个”*”或者”</em>“夹起来  <strong>@zeroker</strong><br>5.链接：<br>内联方式：This is an [注释] (url).<br>6.图片：<br>! [alt text] [id]</p>]]></content>
+    <content type="html"><![CDATA[<h3 id="简单的用于博客的指令："><a href="#简单的用于博客的指令：" class="headerlink" title="简单的用于博客的指令："></a>简单的用于博客的指令：</h3><p>hexo new post “the name of the file”<br>hexo g 部署<br>hexo s<br>hexo s –debug<br>hexo d<br>hexo d -g</p><h3 id="Markdown"><a href="#Markdown" class="headerlink" title="Markdown"></a>Markdown</h3><p>1.标题设置：</p><p>#字符用于控制标题大小 （一级也就是一个#最大）<br>2.块注释：（blockquote）</p><blockquote><blockquote><p>通过在文字开头添加“&gt;”表示块注释</p></blockquote></blockquote><p>3.斜体： 将需要设置为斜体的文字两端使用1个星号 或者 “<em>“夹起来 <em>@zeroker</em><br>4.粗体：<br>将需要设置为斜体的文字两端使用2个”*”或者”</em>“夹起来  <strong>@zeroker</strong><br>5.链接：<br>内联方式：This is an [注释] (url).<br>6.图片：<br>! [alt text] [id]</p>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;h3 id=&quot;简单的用于博客的指令：&quot;&gt;&lt;a href=&quot;#简单的用于博客的指令：&quot; class=&quot;headerlink&quot; title=&quot;简单的用于博客的指令：&quot;&gt;&lt;/a&gt;简单的用于博客的指令：&lt;/h3&gt;&lt;p&gt;hexo post “the name of the file”&lt;b
+        &lt;h3 id=&quot;简单的用于博客的指令：&quot;&gt;&lt;a href=&quot;#简单的用于博客的指令：&quot; class=&quot;headerlink&quot; title=&quot;简单的用于博客的指令：&quot;&gt;&lt;/a&gt;简单的用于博客的指令：&lt;/h3&gt;&lt;p&gt;hexo new post “the name of the fil
       
     
     </summary>
