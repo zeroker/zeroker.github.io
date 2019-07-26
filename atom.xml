@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-07-26T03:36:20.034Z</updated>
+  <updated>2019-07-26T03:39:38.153Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>二叉搜索树中序后继</title>
+    <link href="http://yoursite.com/2019/07/26/%E4%BA%8C%E5%8F%89%E6%90%9C%E7%B4%A2%E6%A0%91%E4%B8%AD%E5%BA%8F%E5%90%8E%E7%BB%A7-1/"/>
+    <id>http://yoursite.com/2019/07/26/二叉搜索树中序后继-1/</id>
+    <published>2019-07-26T03:39:09.000Z</published>
+    <updated>2019-07-26T03:39:38.153Z</updated>
+    
+    <content type="html"><![CDATA[<p>给定一个结点，找出这个结点的后继结点<br>中序遍历：左 中 右<br>情况分类：<br>一：结点的右子树不为空<br>返回右子树的最左结点<br>二：结点的右子树为空<br>1.如果这个结点是根结点，直接返回NULL<br>2.如果这个结点是父节点的左儿子，直接返回父亲结点<br>3.如果这个结点是父节点的右儿子，不断向上找第一个结点，这个结点是他父亲结点的左儿子</p><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// Definition for a Node.</span></span><br><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">class Node &#123;</span></span><br><span class="line"><span class="comment">public:</span></span><br><span class="line"><span class="comment">    int val;</span></span><br><span class="line"><span class="comment">    Node* left;</span></span><br><span class="line"><span class="comment">    Node* right;</span></span><br><span class="line"><span class="comment">    Node* parent;</span></span><br><span class="line"><span class="comment">&#125;;</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function">Node* <span class="title">inorderSuccessor</span><span class="params">(Node* node)</span> </span>&#123;</span><br><span class="line">        </span><br><span class="line">        <span class="keyword">if</span> (node-&gt;right) &#123;</span><br><span class="line">            Node* p = node-&gt;right;</span><br><span class="line">            <span class="keyword">while</span> (p-&gt;left) &#123;</span><br><span class="line">                p = p-&gt;left;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">return</span> p;</span><br><span class="line">        &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">            <span class="keyword">if</span> (node-&gt;parent == <span class="literal">NULL</span>) </span><br><span class="line">                <span class="keyword">return</span> <span class="literal">NULL</span>;</span><br><span class="line">            <span class="keyword">if</span> (node-&gt;parent-&gt;left == node) </span><br><span class="line">                <span class="keyword">return</span> node-&gt;parent;</span><br><span class="line">            <span class="keyword">else</span> &#123;</span><br><span class="line">                    Node *p = node-&gt;parent;</span><br><span class="line">                    <span class="keyword">while</span> (p &amp;&amp; p-&gt;right == node) &#123;</span><br><span class="line">                        node = p;</span><br><span class="line">                        p = p-&gt;parent;</span><br><span class="line">                    &#125;</span><br><span class="line">                    <span class="keyword">return</span> p;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;给定一个结点，找出这个结点的后继结点&lt;br&gt;中序遍历：左 中 右&lt;br&gt;情况分类：&lt;br&gt;一：结点的右子树不为空&lt;br&gt;返回右子树的最左结点&lt;br&gt;二：结点的右子树为空&lt;br&gt;1.如果这个结点是根结点，直接返回NULL&lt;br&gt;2.如果这个结点是父节点的左儿子，直接返回父亲结
+      
+    
+    </summary>
+    
+    
+      <category term="算法" scheme="http://yoursite.com/tags/%E7%AE%97%E6%B3%95/"/>
+    
+  </entry>
   
   <entry>
     <title></title>
@@ -193,11 +216,11 @@
   </entry>
   
   <entry>
-    <title>LRUU</title>
+    <title>LRU</title>
     <link href="http://yoursite.com/2019/07/25/LRUU/"/>
     <id>http://yoursite.com/2019/07/25/LRUU/</id>
     <published>2019-07-25T08:12:45.000Z</published>
-    <updated>2019-07-25T08:12:45.267Z</updated>
+    <updated>2019-07-26T03:40:03.286Z</updated>
     
     <summary type="html">
     
@@ -429,29 +452,6 @@
       
       
         &lt;p&gt;2018年的十一假期过去了，明天又要开始上课了，不对，是今天。忙碌了一个暑假做了小app，终于提交了小作品，哈！终于有了一个小假期，安排一手，顶着人流高峰，出去转一转。&lt;br&gt;天津，怎么说，感觉那边的方言特别的有味道呢？对！就是说快板的味道，媒体在无形中给留下的影响还是蛮大
-      
-    
-    </summary>
-    
-    
-      <category term="杂谈" scheme="http://yoursite.com/tags/%E6%9D%82%E8%B0%88/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>next主题</title>
-    <link href="http://yoursite.com/2018/05/11/%E4%B8%BB%E9%A2%98/"/>
-    <id>http://yoursite.com/2018/05/11/主题/</id>
-    <published>2018-05-11T14:42:36.000Z</published>
-    <updated>2018-05-13T05:56:46.918Z</updated>
-    
-    <content type="html"><![CDATA[<p>  这两天比较了yilia和next主题，最后还是选择了自我感觉比较酷<br>next主题，从这中间也走了一些坑。<br>1.克隆下来的主题，从git上克隆下来了一个不是最新版本的就是比较伤的事情了，突然发现主题的语言变成了德文–？看到git日志才发现最新的git版本的url。<br>2.还有就是最初按照next官方文档配置的目录..发现官方文档也好久没有更新了，目录中的about、tags等都需要手动配置，拿about说一下，hexo new post”about”，然后在md里添加type: “about”，记得有空格啊。</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;  这两天比较了yilia和next主题，最后还是选择了自我感觉比较酷&lt;br&gt;next主题，从这中间也走了一些坑。&lt;br&gt;1.克隆下来的主题，从git上克隆下来了一个不是最新版本的就是比较伤的事情了，突然发现主题的语言变成了德文–？看到git日志才发现最新的git版本的ur
       
     
     </summary>
