@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://yoursite.com/about/index.html</loc>
+    
+    <lastmod>2019-08-04T07:05:05.829Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://yoursite.com/2019/08/04/%E8%AE%BE%E8%AE%A1%E5%AE%B9%E5%99%A8/</loc>
     
     <lastmod>2019-08-04T06:44:40.193Z</lastmod>
@@ -159,13 +166,6 @@
     <loc>http://yoursite.com/2018/03/22/Git+Markdown/</loc>
     
     <lastmod>2018-05-11T15:12:57.530Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/about/index.html</loc>
-    
-    <lastmod>2018-05-11T14:28:32.742Z</lastmod>
     
   </url>
   
