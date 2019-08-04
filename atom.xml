@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-07-26T03:39:38.153Z</updated>
+  <updated>2019-08-04T06:14:45.912Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,52 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>二分查找第一个比K大的数</title>
+    <link href="http://yoursite.com/2019/08/04/%E4%BA%8C%E5%88%86%E6%9F%A5%E6%89%BE%E7%AC%AC%E4%B8%80%E4%B8%AA%E6%AF%94K%E5%A4%A7%E7%9A%84%E6%95%B0/"/>
+    <id>http://yoursite.com/2019/08/04/二分查找第一个比K大的数/</id>
+    <published>2019-08-04T06:05:30.000Z</published>
+    <updated>2019-08-04T06:14:45.912Z</updated>
+    
+    <content type="html"><![CDATA[<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">find</span><span class="params">(<span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt; a, <span class="keyword">int</span> k)</span> </span>&#123;</span><br><span class="line"><span class="keyword">int</span> l = <span class="number">0</span>, r = a.size();</span><br><span class="line"><span class="keyword">int</span> id;</span><br><span class="line"><span class="keyword">while</span> (l &lt;= r) &#123;</span><br><span class="line"></span><br><span class="line"><span class="keyword">int</span> mid = l + (r - l) / <span class="number">2</span>;</span><br><span class="line"><span class="keyword">if</span> (a[mid] &gt; k) &#123; </span><br><span class="line">id = mid;</span><br><span class="line">r = mid - <span class="number">1</span>;</span><br><span class="line">&#125; <span class="keyword">else</span> &#123;</span><br><span class="line">l = mid + <span class="number">1</span>;</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">return</span> id;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;figure class=&quot;highlight c++&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;
+      
+    
+    </summary>
+    
+    
+      <category term="算法" scheme="http://yoursite.com/tags/%E7%AE%97%E6%B3%95/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>虚拟内存</title>
+    <link href="http://yoursite.com/2019/07/28/%E8%99%9A%E6%8B%9F%E5%86%85%E5%AD%98/"/>
+    <id>http://yoursite.com/2019/07/28/虚拟内存/</id>
+    <published>2019-07-28T10:22:25.000Z</published>
+    <updated>2019-07-28T10:25:19.382Z</updated>
+    
+    <content type="html"><![CDATA[<h6 id="功能："><a href="#功能：" class="headerlink" title="功能："></a>功能：</h6><p>一：进程内存管理<br>它有助于进程进行内存管理，主要体现在：<br>1.内存完整性：由于虚拟内存对进程的”欺骗”，每个进程都认为自己获取的内存是一块连续的地址。我们在编写应用程序时，就不用考虑大块地址的分配，总是认为系统有足够的大块内存即可。<br>2.安全：由于进程访问内存时，都要通过页表来寻址，操作系统在页表的各个项目上添加各种访问权限标识位，就可以实现内存的权限控制。<br>二：数据共享<br>通过虚拟内存更容易实现内存和数据的共享。<br>在进程加载系统库时，总是先分配一块内存，将磁盘中的库文件加载到这块内存中，在直接使用物理内存时，由于物理内存地址唯一，即使系统发现同一个库在系统内加载了两次，但每个进程指定的加载内存不一样，系统也无能为力。<br>而在使用虚拟内存时，系统只需要将进程的虚拟内存地址指向库文件所在的物理内存地址即可。如上文图中所示，进程 P1 和 P2 的 B 地址都指向了物理地址 C。<br>而通过使用虚拟内存使用共享内存也很简单，系统只需要将各个进程的虚拟内存地址指向系统分配的共享内存地址即可。<br>三：SWAP<br>虚拟内存可以让帮进程”扩充”内存。<br>我们前文提到了虚拟内存通过缺页中断为进程分配物理内存，内存总是有限的，如果所有的物理内存都被占用了怎么办呢？<br>Linux 提出 SWAP 的概念，Linux 中可以使用 SWAP 分区，在分配物理内存，但可用内存不足时，将暂时不用的内存数据先放到磁盘上，让有需要的进程先使用，等进程再需要使用这些数据时，再将这些数据加载到内存中，通过这种”交换”技术，Linux 可以让进程使用更多的内存。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h6 id=&quot;功能：&quot;&gt;&lt;a href=&quot;#功能：&quot; class=&quot;headerlink&quot; title=&quot;功能：&quot;&gt;&lt;/a&gt;功能：&lt;/h6&gt;&lt;p&gt;一：进程内存管理&lt;br&gt;它有助于进程进行内存管理，主要体现在：&lt;br&gt;1.内存完整性：由于虚拟内存对进程的”欺骗”，每个进程都认为自
+      
+    
+    </summary>
+    
+    
+      <category term="操作系统" scheme="http://yoursite.com/tags/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/"/>
+    
+  </entry>
   
   <entry>
     <title>二叉搜索树中序后继</title>
@@ -114,7 +160,7 @@
     <link href="http://yoursite.com/2019/07/26/%E7%8E%AF%E5%BD%A2%E9%93%BE%E8%A1%A8/"/>
     <id>http://yoursite.com/2019/07/26/环形链表/</id>
     <published>2019-07-26T01:29:52.000Z</published>
-    <updated>2019-07-26T01:47:38.619Z</updated>
+    <updated>2019-07-26T04:44:15.525Z</updated>
     
     <content type="html"><![CDATA[<p>一个含有循环链表的链表怎么求它开始循环的入口？<br>给出一个循环链表的例子：<br>1-&gt;2-&gt;3-&gt;4-&gt;5-&gt;3  最后5又指向了3，也就是说3-&gt;4-&gt;5-&gt;3形成了一个环<br>假设非环形的长度是x, 环形的长度是y, 链表总长度是n = x + y<br>思路：<br>两个指针， fast一次走两步， slow一次走一步， 总有一次他们会在环的某一个位置相遇。<br>于是可以列出关系表达式：<br>fast = 2slow (一个走一步，一个走两步，走了相同的时间)<br>fast = slow + n<em>y (fast比slow多走了n圈的环)<br>2slow = slow + n</em>y -&gt; slow = n<em>y<br>得出了关键的表达式： slow = n</em>y, 假设一下slow处于环形起点的时候，n*y 圈之后还会回到起点。但是，slow是从链表的起点开始的，所以从入口要回退x步， 就是fast和slow相遇的点， 也就是说 非环形的链表长度x 等于 fast和slow最后相遇的节点到环形入口的长度。</p><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function">ListNode *<span class="title">detectCycle</span><span class="params">(ListNode *head)</span> </span>&#123;</span><br><span class="line">        ListNode* fast = head;</span><br><span class="line">        ListNode* slow = head;</span><br><span class="line">        </span><br><span class="line">        <span class="keyword">while</span> (fast != <span class="literal">NULL</span> &amp;&amp; fast-&gt;next != <span class="literal">NULL</span>) &#123;</span><br><span class="line">            fast = fast-&gt;next-&gt;next;</span><br><span class="line">            slow = slow-&gt;next;</span><br><span class="line">            <span class="keyword">if</span> (fast == slow) &#123;</span><br><span class="line">                <span class="keyword">break</span>;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span> (fast == <span class="literal">NULL</span> || fast-&gt;next == <span class="literal">NULL</span>) </span><br><span class="line">            <span class="keyword">return</span> <span class="literal">NULL</span>; </span><br><span class="line">        fast = head;</span><br><span class="line">   </span><br><span class="line">        <span class="keyword">while</span>(fast != slow) &#123;</span><br><span class="line">            fast = fast-&gt;next;</span><br><span class="line">            slow = slow-&gt;next;</span><br><span class="line">        &#125; </span><br><span class="line">        <span class="keyword">return</span> fast;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>]]></content>
     
@@ -137,12 +183,22 @@
     <link href="http://yoursite.com/2019/07/26/%E5%88%A0%E9%99%A4%E9%93%BE%E8%A1%A8%E9%87%8D%E5%A4%8D%E5%85%83%E7%B4%A0/"/>
     <id>http://yoursite.com/2019/07/26/删除链表重复元素/</id>
     <published>2019-07-26T01:29:25.000Z</published>
-    <updated>2019-07-26T01:29:25.290Z</updated>
+    <updated>2019-08-04T06:03:06.067Z</updated>
+    
+    <content type="html"><![CDATA[<p>输入: 1-&gt;2-&gt;3-&gt;3-&gt;4-&gt;4-&gt;5<br>输出: 1-&gt;2-&gt;5</p><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function">ListNode* <span class="title">deleteDuplicates</span><span class="params">(ListNode* head)</span> </span>&#123;</span><br><span class="line">        ListNode* h = <span class="literal">NULL</span>;</span><br><span class="line">        ListNode* pre = <span class="literal">NULL</span>;</span><br><span class="line">        ListNode* cur = head;</span><br><span class="line">        ListNode* r = <span class="literal">NULL</span>;</span><br><span class="line">        <span class="keyword">while</span> (cur != <span class="literal">NULL</span>) &#123;</span><br><span class="line">            <span class="keyword">if</span> (juge(pre, cur) &amp;&amp; juge(cur, cur-&gt;next)) &#123;</span><br><span class="line">                <span class="keyword">if</span> (h == <span class="literal">NULL</span>) &#123;</span><br><span class="line">                    h = <span class="keyword">new</span> ListNode(cur-&gt;val);</span><br><span class="line">                    r = h;</span><br><span class="line">                &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                    r-&gt;next = <span class="keyword">new</span> ListNode(cur-&gt;val);</span><br><span class="line">                    r = r-&gt;next;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">            pre = cur;</span><br><span class="line">            cur = cur-&gt;next;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> h;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="keyword">bool</span> <span class="title">juge</span><span class="params">(ListNode* node1, ListNode* node2)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span> (node1 == <span class="literal">NULL</span> || node2 == <span class="literal">NULL</span> || node1-&gt;val != node2-&gt;val) &#123;</span><br><span class="line">            <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>]]></content>
     
     <summary type="html">
     
+      
+      
+        &lt;p&gt;输入: 1-&amp;gt;2-&amp;gt;3-&amp;gt;3-&amp;gt;4-&amp;gt;4-&amp;gt;5&lt;br&gt;输出: 1-&amp;gt;2-&amp;gt;5&lt;/p&gt;
+&lt;figure class=&quot;highlight c++&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span
+      
+    
     </summary>
     
+    
+      <category term="算法" scheme="http://yoursite.com/tags/%E7%AE%97%E6%B3%95/"/>
     
   </entry>
   
@@ -175,7 +231,7 @@
     <link href="http://yoursite.com/2019/07/26/%E8%AE%BE%E8%AE%A1%E5%AE%B9%E5%99%A8/"/>
     <id>http://yoursite.com/2019/07/26/设计容器/</id>
     <published>2019-07-26T01:24:09.189Z</published>
-    <updated>2019-07-26T01:25:41.877Z</updated>
+    <updated>2019-08-04T05:57:52.950Z</updated>
     
     <content type="html"><![CDATA[<hr><p>title: 设计容器<br>date: 2019-07-26 09:24:09</p><h2 id="tags-算法"><a href="#tags-算法" class="headerlink" title="tags: 算法"></a>tags: 算法</h2><p>设计一个支持在平均 时间复杂度 O(1) 下，执行以下操作的数据结构。<br>insert(val)：当元素 val 不存在时，向集合中插入该项。<br>remove(val)：元素 val 存在时，从集合中移除该项。<br>getRandom：随机返回现有集合中的一项。每个元素应该有相同的概率被返回。</p><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">RandomizedSet</span> &#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt; v;</span><br><span class="line">    <span class="built_in">map</span>&lt;<span class="keyword">int</span>, <span class="keyword">int</span>&gt; m;</span><br><span class="line">    <span class="function"><span class="keyword">bool</span> <span class="title">insert</span><span class="params">(<span class="keyword">int</span> val)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span> (m.find(val) != m.end()) &#123;</span><br><span class="line">            <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        v.push_back(val);</span><br><span class="line">        m[val] = v.size() - <span class="number">1</span>;</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">    &#125;</span><br><span class="line">        <span class="function"><span class="keyword">bool</span> <span class="title">remove</span><span class="params">(<span class="keyword">int</span> val)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span> (m.find(val) == m.end()) &#123;</span><br><span class="line">            <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">        &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">            <span class="keyword">int</span> i = m[val];                                <span class="comment">//</span></span><br><span class="line">            <span class="keyword">int</span> last = v[v.size()<span class="number">-1</span>];</span><br><span class="line">            m.erase(val);</span><br><span class="line">            v[i] = last;</span><br><span class="line">            v.pop_back();</span><br><span class="line">            <span class="keyword">if</span> (v.size() != i)                       <span class="comment">//</span></span><br><span class="line">                m[last] = i;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="keyword">int</span> <span class="title">getRandom</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">int</span> n = v.size();</span><br><span class="line">        <span class="keyword">return</span> v[rand()%n];         </span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>]]></content>
     
@@ -195,15 +251,24 @@
   
   <entry>
     <title>LRU</title>
-    <link href="http://yoursite.com/2019/07/25/LRUU/"/>
-    <id>http://yoursite.com/2019/07/25/LRUU/</id>
+    <link href="http://yoursite.com/2019/07/25/LRU/"/>
+    <id>http://yoursite.com/2019/07/25/LRU/</id>
     <published>2019-07-25T08:12:45.000Z</published>
-    <updated>2019-07-26T03:40:03.286Z</updated>
+    <updated>2019-08-04T05:56:54.108Z</updated>
+    
+    <content type="html"><![CDATA[<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">LRUCache</span> &#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="built_in">list</span>&lt;<span class="keyword">int</span>&gt; link;</span><br><span class="line">    <span class="built_in">map</span>&lt;<span class="keyword">int</span>, <span class="keyword">int</span>&gt; m;</span><br><span class="line">    <span class="keyword">int</span> capacity;</span><br><span class="line">    LRUCache(<span class="keyword">int</span> capacity) &#123;</span><br><span class="line">        <span class="keyword">this</span>-&gt;capacity = capacity;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="function"><span class="keyword">int</span> <span class="title">get</span><span class="params">(<span class="keyword">int</span> key)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(m.find(key) == m.end()) &#123;</span><br><span class="line">            <span class="keyword">return</span> <span class="number">-1</span>;</span><br><span class="line">        &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">            link.remove(key);</span><br><span class="line">            link.push_front(key);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> m[key];</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">put</span><span class="params">(<span class="keyword">int</span> key, <span class="keyword">int</span> value)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span> (m.find(key) != m.end()) &#123;       <span class="comment">//已存在</span></span><br><span class="line">            m[key] = value;</span><br><span class="line">            link.remove(key);</span><br><span class="line">            link.push_front(key);</span><br><span class="line">        &#125; <span class="keyword">else</span> &#123;                            <span class="comment">//不存在</span></span><br><span class="line">            <span class="keyword">if</span> (m.size() &gt;= capacity) &#123;</span><br><span class="line">                <span class="keyword">int</span> keyLast = link.back();</span><br><span class="line">                link.pop_back();</span><br><span class="line">                m.erase(keyLast);</span><br><span class="line">                </span><br><span class="line">                link.push_front(key);</span><br><span class="line">                m[key] = value;</span><br><span class="line">            &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                m[key] = value;</span><br><span class="line">                link.push_front(key);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>]]></content>
     
     <summary type="html">
     
+      
+      
+        &lt;figure class=&quot;highlight c++&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;
+      
+    
     </summary>
     
+    
+      <category term="算法" scheme="http://yoursite.com/tags/%E7%AE%97%E6%B3%95/"/>
     
   </entry>
   
@@ -413,52 +478,6 @@
     
     
       <category term="计算机网络" scheme="http://yoursite.com/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>天津之行</title>
-    <link href="http://yoursite.com/2018/10/08/%E5%A4%A9%E6%B4%A5%E4%B9%8B%E8%A1%8C/"/>
-    <id>http://yoursite.com/2018/10/08/天津之行/</id>
-    <published>2018-10-07T17:25:31.000Z</published>
-    <updated>2018-10-08T09:33:46.805Z</updated>
-    
-    <content type="html"><![CDATA[<p>2018年的十一假期过去了，明天又要开始上课了，不对，是今天。忙碌了一个暑假做了小app，终于提交了小作品，哈！终于有了一个小假期，安排一手，顶着人流高峰，出去转一转。<br>天津，怎么说，感觉那边的方言特别的有味道呢？对！就是说快板的味道，媒体在无形中给留下的影响还是蛮大的嘛。怎么说，在电视机旁看一场相声，真的不如来一场现场的来的有感觉！<br><img src="/images/天津01.jpg" alt="R" title="T"><br>还有嘛，就是躺在秋天的草坪上面，旁边放着音乐，体会时间的悠闲<br>哈！简单放两张图纪念一下。<br><img src="/images/天津04.jpg" alt="R" title="T"><br><img src="/images/天津02.jpg" alt="R" title="T"><br>传说中的天津之眼，架在桥上的摩天轮真的有些许艺术感。<br><img src="/images/天津之眼.jpg" alt="R" title="T"></p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;2018年的十一假期过去了，明天又要开始上课了，不对，是今天。忙碌了一个暑假做了小app，终于提交了小作品，哈！终于有了一个小假期，安排一手，顶着人流高峰，出去转一转。&lt;br&gt;天津，怎么说，感觉那边的方言特别的有味道呢？对！就是说快板的味道，媒体在无形中给留下的影响还是蛮大
-      
-    
-    </summary>
-    
-    
-      <category term="杂谈" scheme="http://yoursite.com/tags/%E6%9D%82%E8%B0%88/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>next主题</title>
-    <link href="http://yoursite.com/2018/05/11/%E4%B8%BB%E9%A2%98/"/>
-    <id>http://yoursite.com/2018/05/11/主题/</id>
-    <published>2018-05-11T14:42:36.000Z</published>
-    <updated>2018-05-13T05:56:46.918Z</updated>
-    
-    <content type="html"><![CDATA[<p>  这两天比较了yilia和next主题，最后还是选择了自我感觉比较酷<br>next主题，从这中间也走了一些坑。<br>1.克隆下来的主题，从git上克隆下来了一个不是最新版本的就是比较伤的事情了，突然发现主题的语言变成了德文–？看到git日志才发现最新的git版本的url。<br>2.还有就是最初按照next官方文档配置的目录..发现官方文档也好久没有更新了，目录中的about、tags等都需要手动配置，拿about说一下，hexo new post”about”，然后在md里添加type: “about”，记得有空格啊。</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;  这两天比较了yilia和next主题，最后还是选择了自我感觉比较酷&lt;br&gt;next主题，从这中间也走了一些坑。&lt;br&gt;1.克隆下来的主题，从git上克隆下来了一个不是最新版本的就是比较伤的事情了，突然发现主题的语言变成了德文–？看到git日志才发现最新的git版本的ur
-      
-    
-    </summary>
-    
-    
-      <category term="杂谈" scheme="http://yoursite.com/tags/%E6%9D%82%E8%B0%88/"/>
     
   </entry>
   
