@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-06-03T16:01:11.192Z</updated>
+  <updated>2019-08-23T07:28:12.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,28 +15,6 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>test测试</title>
-    <link href="http://yoursite.com/2020/06/04/test%E6%B5%8B%E8%AF%95/"/>
-    <id>http://yoursite.com/2020/06/04/test测试/</id>
-    <published>2020-06-03T16:00:48.000Z</published>
-    <updated>2020-06-03T16:01:11.192Z</updated>
-    
-    <content type="html"><![CDATA[<p>hello world~!!!!</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;hello world~!!!!&lt;/p&gt;
-
-      
-    
-    </summary>
-    
-    
-  </entry>
   
   <entry>
     <title>字符串的排列</title>
@@ -474,6 +452,29 @@
       
       
         &lt;figure class=&quot;highlight c++&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;
+      
+    
+    </summary>
+    
+    
+      <category term="算法" scheme="http://yoursite.com/tags/%E7%AE%97%E6%B3%95/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>快速排序三数取中</title>
+    <link href="http://yoursite.com/2019/07/25/%E5%BF%AB%E9%80%9F%E6%8E%92%E5%BA%8F%E4%B8%89%E6%95%B0%E5%8F%96%E4%B8%AD/"/>
+    <id>http://yoursite.com/2019/07/25/快速排序三数取中/</id>
+    <published>2019-07-25T08:01:11.000Z</published>
+    <updated>2019-07-28T03:17:46.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>给一个有序的数组，那代码的时间复杂度就是O(n^2)拉。<br>最好就是取一个要排序数组中所有值的中值，（很难）<br><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">int</span> <span class="title">partition</span><span class="params">(<span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt;&amp; nums, <span class="keyword">int</span> left, <span class="keyword">int</span> right)</span> </span>&#123;</span><br><span class="line">       </span><br><span class="line">       <span class="keyword">int</span> mid = (left + right) / <span class="number">2</span>;</span><br><span class="line">        <span class="keyword">if</span> (nums[left] &gt; nums[right]) </span><br><span class="line">            swap(nums[left], nums[right]);</span><br><span class="line">        <span class="keyword">if</span> (nums[mid] &gt; nums[right])</span><br><span class="line">            swap(nums[mid], nums[right]);</span><br><span class="line">        <span class="keyword">if</span> (nums[mid] &gt; nums[left])</span><br><span class="line">            swap(nums[mid], nums[left]);                <span class="comment">//把中值换到最左边</span></span><br><span class="line">        </span><br><span class="line">        <span class="keyword">int</span> val = nums[left];   </span><br><span class="line">        <span class="keyword">int</span> i = left, j = right;                        <span class="comment">//填坑法</span></span><br><span class="line">        <span class="keyword">while</span> (i &lt; j) &#123;</span><br><span class="line">           <span class="keyword">while</span> (i &lt; j &amp;&amp; nums[j] &gt;= val) j--;</span><br><span class="line">           nums[i] = nums[j]; </span><br><span class="line">           <span class="keyword">while</span> (i &lt; j &amp;&amp; nums[i] &lt;= val) i++;</span><br><span class="line">            nums[j] = nums[i];</span><br><span class="line">        &#125;</span><br><span class="line">        nums[i] = val; </span><br><span class="line">        <span class="keyword">return</span> i;</span><br><span class="line">    &#125;</span><br><span class="line"> </span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">sort</span><span class="params">(<span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt;&amp; nums, <span class="keyword">int</span> left, <span class="keyword">int</span> right)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span> (left &gt;= right)</span><br><span class="line">            <span class="keyword">return</span>;</span><br><span class="line">        <span class="keyword">int</span> mid = partition(nums, left, right);</span><br><span class="line">        sort(nums, left, mid<span class="number">-1</span>);</span><br><span class="line">        sort(nums, mid + <span class="number">1</span>, right);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt; <span class="title">sortArray</span><span class="params">(<span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt;&amp; nums)</span> </span>&#123;</span><br><span class="line">        </span><br><span class="line">        sort(nums, <span class="number">0</span>, nums.size()<span class="number">-1</span>);</span><br><span class="line">        <span class="keyword">return</span> nums;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure></p><h5 id="没有优化的快排贴一下："><a href="#没有优化的快排贴一下：" class="headerlink" title="没有优化的快排贴一下："></a>没有优化的快排贴一下：</h5><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">pattern</span><span class="params">(<span class="keyword">int</span> l,<span class="keyword">int</span> r)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line"><span class="keyword">int</span> i = l,j = r;</span><br><span class="line"><span class="keyword">while</span>(i&lt;j)</span><br><span class="line">&#123;</span><br><span class="line"><span class="keyword">while</span>(i&lt;j &amp;&amp; a[i]&lt;=a[j])</span><br><span class="line">j--;</span><br><span class="line"><span class="keyword">if</span>(i&lt;j)</span><br><span class="line">swap(a[i],a[j]);</span><br><span class="line"><span class="keyword">while</span>(i&lt;j &amp;&amp; a[i]&lt;=a[j])</span><br><span class="line">i++;</span><br><span class="line"><span class="keyword">if</span>(i&lt;j)</span><br><span class="line">swap(a[i],a[j]);</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">return</span> i;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">sort</span><span class="params">(<span class="keyword">int</span> i,<span class="keyword">int</span> j)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line"><span class="keyword">if</span>(i&lt;j)</span><br><span class="line">&#123;</span><br><span class="line"><span class="keyword">int</span> mid = pattern(i,j);</span><br><span class="line">sort(i,mid<span class="number">-1</span>);</span><br><span class="line">sort(mid+<span class="number">1</span>,j);</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;给一个有序的数组，那代码的时间复杂度就是O(n^2)拉。&lt;br&gt;最好就是取一个要排序数组中所有值的中值，（很难）&lt;br&gt;&lt;figure class=&quot;highlight c++&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=
       
     
     </summary>
