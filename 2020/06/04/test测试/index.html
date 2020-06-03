@@ -102,18 +102,17 @@
 
 
 
-  <meta name="description" content="1234567891011121314151617181920212223242526272829303132/** * Definition for a binary tree node. * struct c &amp;#123; *     int val; *     TreeNode *left; *     TreeNode *right; *     TreeNode(int x) : va">
-<meta name="keywords" content="算法">
+  <meta name="description" content="hello world~!!!!">
 <meta property="og:type" content="article">
-<meta property="og:title" content="二叉树的最近公共祖先">
-<meta property="og:url" content="http://yoursite.com/2019/07/26/二叉树的最近公共祖先/index.html">
+<meta property="og:title" content="test测试">
+<meta property="og:url" content="http://yoursite.com/2020/06/04/test测试/index.html">
 <meta property="og:site_name" content="Q同學&#39;s world">
-<meta property="og:description" content="1234567891011121314151617181920212223242526272829303132/** * Definition for a binary tree node. * struct c &amp;#123; *     int val; *     TreeNode *left; *     TreeNode *right; *     TreeNode(int x) : va">
+<meta property="og:description" content="hello world~!!!!">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-07-26T02:31:28.000Z">
+<meta property="og:updated_time" content="2020-06-03T16:01:11.192Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="二叉树的最近公共祖先">
-<meta name="twitter:description" content="1234567891011121314151617181920212223242526272829303132/** * Definition for a binary tree node. * struct c &amp;#123; *     int val; *     TreeNode *left; *     TreeNode *right; *     TreeNode(int x) : va">
+<meta name="twitter:title" content="test测试">
+<meta name="twitter:description" content="hello world~!!!!">
 
 
 
@@ -122,7 +121,7 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2019/07/26/二叉树的最近公共祖先/">
+  <link rel="canonical" href="http://yoursite.com/2020/06/04/test测试/">
 
 
 
@@ -132,7 +131,7 @@
   };
 </script>
 
-  <title>二叉树的最近公共祖先 | Q同學's world</title>
+  <title>test测试 | Q同學's world</title>
   
 
 
@@ -298,7 +297,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/07/26/二叉树的最近公共祖先/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/06/04/test测试/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Q-同學">
@@ -315,7 +314,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">二叉树的最近公共祖先
+          <h1 class="post-title" itemprop="name headline">test测试
               
             
           </h1>
@@ -340,7 +339,7 @@
                 
               
 
-              <time title="创建时间：2019-07-26 10:31:07 / 修改时间：10:31:28" itemprop="dateCreated datePublished" datetime="2019-07-26T10:31:07+08:00">2019-07-26</time>
+              <time title="创建时间：2020-06-04 00:00:48 / 修改时间：00:01:11" itemprop="dateCreated datePublished" datetime="2020-06-04T00:00:48+08:00">2020-06-04</time>
             
 
             
@@ -378,7 +377,8 @@
       
 
       
-        <figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * Definition for a binary tree node.</span></span><br><span class="line"><span class="comment"> * struct c &#123;</span></span><br><span class="line"><span class="comment"> *     int val;</span></span><br><span class="line"><span class="comment"> *     TreeNode *left;</span></span><br><span class="line"><span class="comment"> *     TreeNode *right;</span></span><br><span class="line"><span class="comment"> *     TreeNode(int x) : val(x), left(NULL), right(NULL) &#123;&#125;</span></span><br><span class="line"><span class="comment"> * &#125;;</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    TreeNode* result;</span><br><span class="line">    <span class="function"><span class="keyword">bool</span> <span class="title">isInside</span><span class="params">(TreeNode* root, TreeNode* p, TreeNode* q)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span> (root == <span class="literal">NULL</span>) &#123;</span><br><span class="line">            <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">bool</span> left, right;</span><br><span class="line">        left = isInside(root-&gt;left, p, q);</span><br><span class="line">        right = isInside(root-&gt;right, p, q);</span><br><span class="line">        <span class="keyword">if</span> ((right &amp;&amp; left) || ((root == p || root == q) &amp;&amp; (left || right))) &#123;</span><br><span class="line">             result = root;</span><br><span class="line">             <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">         &#125;</span><br><span class="line">         <span class="keyword">if</span> (left || right || root == p || root == q)</span><br><span class="line">             <span class="keyword">return</span> <span class="number">1</span>;</span><br><span class="line">         <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function">TreeNode* <span class="title">lowestCommonAncestor</span><span class="params">(TreeNode* root, TreeNode* p, TreeNode* q)</span> </span>&#123;</span><br><span class="line">        isInside(root, p, q);</span><br><span class="line">        <span class="keyword">return</span> result;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+        <p>hello world~!!!!</p>
+
       
     </div>
 
@@ -396,14 +396,6 @@
 
     <footer class="post-footer">
       
-        <div class="post-tags">
-          
-            <a href="/tags/算法/" rel="tag">
-            #
-            算法</a>
-          
-        </div>
-      
 
       
       
@@ -413,8 +405,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/07/26/一个进栈的所有出栈序列/" rel="next" title="一个进栈的所有出栈序列">
-                <i class="fa fa-chevron-left"></i> 一个进栈的所有出栈序列
+              <a href="/2020/03/07/postthrift/" rel="next" title="postthrift">
+                <i class="fa fa-chevron-left"></i> postthrift
               </a>
             
           </div>
@@ -422,10 +414,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2019/07/26/二叉搜索树中序后继/" rel="prev" title="二叉搜索树中序后继">
-                二叉搜索树中序后继 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
