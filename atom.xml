@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-06-30T11:23:23.085Z</updated>
+  <updated>2020-06-30T11:24:30.845Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="http://yoursite.com/2020/06/30/vscode/"/>
     <id>http://yoursite.com/2020/06/30/vscode/</id>
     <published>2020-06-30T02:43:29.000Z</published>
-    <updated>2020-06-30T11:23:23.085Z</updated>
+    <updated>2020-06-30T11:24:30.845Z</updated>
     
     <content type="html"><![CDATA[<p>1、自定义键盘快捷键：文件-&gt;首选项-&gt;键盘快捷方式 <a href="https://www.cnblogs.com/showcase/p/10637317.html" target="_blank" rel="noopener">常见的快捷键</a></p>]]></content>
     
@@ -35,7 +35,7 @@
     </summary>
     
     
-      <category term="开发工具" scheme="http://yoursite.com/tags/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/"/>
+      <category term="工具箱" scheme="http://yoursite.com/tags/%E5%B7%A5%E5%85%B7%E7%AE%B1/"/>
     
   </entry>
   
