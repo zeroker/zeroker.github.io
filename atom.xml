@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-07-01T01:13:00.344Z</updated>
+  <updated>2020-07-01T01:13:40.644Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,11 +17,11 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Git+iterm</title>
+    <title>Git+Iterm</title>
     <link href="http://yoursite.com/2020/06/30/Git+iterm/"/>
     <id>http://yoursite.com/2020/06/30/Git+iterm/</id>
     <published>2020-06-30T11:31:17.000Z</published>
-    <updated>2020-07-01T01:13:00.344Z</updated>
+    <updated>2020-07-01T01:13:40.644Z</updated>
     
     <content type="html"><![CDATA[<p>Iterm:<br><a href="https://www.cnblogs.com/guiyuhua/p/8610629.html" target="_blank" rel="noopener">iTerm2设置及使用</a></p><p>Git:<br><img src="/images/git_sum.png" alt="R" title="T"></p><p>Sumery:<br>1、撤销修改<br>场景1：当你改乱了工作区某个文件的内容，想直接丢弃工作区的修改时，用命令git checkout file<br>场景2：当你不但改乱了工作区某个文件的内容，还添加到了暂存区时，想丢弃修改，分两步，第一&gt;步用命令git reset HEAD file，就回到了场景1，第二步按场景1操作。<br>（git reset命令既可以回退版本，也可以把暂存区的修改回退到工作区。当我们用HEAD时，表示最&gt;新的版本。）<br>2、 <a href="https://www.cnblogs.com/kidsitcn/p/4513297.html" target="_blank" rel="noopener">soft hard mixed区别</a></p><hr><p>1、初始化<br>git init //创建<br>git clone /path/to/repository //检出<br>git config –global user.email “<a href="mailto:you@example.com" target="_blank" rel="noopener">you@example.com</a>“ //配置email<br>git config –global user.name “Name” //配置用户名<br>git remote add origin url</p><p>2、操作<br>git add <file> // 文件添加，A → B<br>git add . // 所有文件添加，A → B<br>git commit -m “代码提交信息” //文件提交，B → C<br>git commit –amend //与上次commit合并, *B → C<br>git push origin master //推送至master分支, C → D<br>git pull //更新本地仓库至最新改动， D → A<br>git fetch //抓取远程仓库更新， D → C<br>git log //查看提交记录<br>git status //查看修改状态<br>git diff//查看详细修改内容<br>git show//显示某次提交的内容</file></p><p>3、撤销操作<br>git reset <file>//某个文件索引会回滚到最后一次提交， C → B<br>git reset//索引会回滚到最后一次提交， C → B<br>git reset –hard // 索引会回滚到最后一次提交， C → B → A<br>git checkout // 从index复制到workspace， B → A<br>git checkout – files // 文件从index复制到workspace， B → A<br>git checkout HEAD – files // 文件从local repository复制到workspace， C → A</file></p><p>4、分支<br>git checkout -b branch_name //创建名叫“branch_name”的分支，并切换过去<br>git checkout master //切换回主分支<br>git branch -d branch_name // 删除名叫“branch_name”的分支<br>git push origin branch_name //推送分支到远端仓库<br>git merge branch_name // 合并分支branch_name到当前分支(如master)<br>git rebase //衍合，线性化的自动， D → A</p><p>5、冲突处理<br>git diff //对比workspace与index<br>git diff HEAD //对于workspace与最后一次commit<br>git diff &lt;source_branch&gt; &lt;target_branch&gt; //对比差异<br>git add <filename> //修改完冲突，需要add以标记合并成功</filename></p><p>Sumery:<br>1、撤销修改<br>场景1：当你改乱了工作区某个文件的内容，想直接丢弃工作区的修改时，用命令git checkout file<br>场景2：当你不但改乱了工作区某个文件的内容，还添加到了暂存区时，想丢弃修改，分两步，第一步用命令git reset HEAD file，就回到了场景1，第二步按场景1操作。<br>（git reset命令既可以回退版本，也可以把暂存区的修改回退到工作区。当我们用HEAD时，表示最新的版本。）<br>2、 <a href="https://www.cnblogs.com/kidsitcn/p/4513297.html" target="_blank" rel="noopener">soft hard mixed区别</a></p>]]></content>
     
