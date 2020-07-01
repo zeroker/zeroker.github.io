@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-06-30T11:24:30.845Z</updated>
+  <updated>2020-07-01T00:31:18.565Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>git</title>
+    <link href="http://yoursite.com/2020/06/30/git/"/>
+    <id>http://yoursite.com/2020/06/30/git/</id>
+    <published>2020-06-30T11:31:17.000Z</published>
+    <updated>2020-07-01T00:31:18.565Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="image/git_sum.png" alt="R" title="T"></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;img src=&quot;image/git_sum.png&quot; alt=&quot;R&quot; title=&quot;T&quot;&gt;&lt;/p&gt;
+
+      
+    
+    </summary>
+    
+    
+      <category term="工具箱" scheme="http://yoursite.com/tags/%E5%B7%A5%E5%85%B7%E7%AE%B1/"/>
+    
+  </entry>
   
   <entry>
     <title>vscode</title>
@@ -452,29 +476,6 @@
       
         &lt;p&gt;给你一个链表，每 k 个节点一组进行翻转，请你返回翻转后的链表。&lt;br&gt;k 是一个正整数，它的值小于或等于链表的长度。&lt;br&gt;如果节点总数不是 k 的整数倍，那么请将最后剩余的节点保持原有顺序。&lt;/p&gt;
 &lt;figure class=&quot;highlight c++&quot;&gt;&lt;tabl
-      
-    
-    </summary>
-    
-    
-      <category term="算法" scheme="http://yoursite.com/tags/%E7%AE%97%E6%B3%95/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>LRU</title>
-    <link href="http://yoursite.com/2019/07/25/LRU/"/>
-    <id>http://yoursite.com/2019/07/25/LRU/</id>
-    <published>2019-07-25T08:12:45.000Z</published>
-    <updated>2019-08-04T05:56:56.000Z</updated>
-    
-    <content type="html"><![CDATA[<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">LRUCache</span> &#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="built_in">list</span>&lt;<span class="keyword">int</span>&gt; link;</span><br><span class="line">    <span class="built_in">map</span>&lt;<span class="keyword">int</span>, <span class="keyword">int</span>&gt; m;</span><br><span class="line">    <span class="keyword">int</span> capacity;</span><br><span class="line">    LRUCache(<span class="keyword">int</span> capacity) &#123;</span><br><span class="line">        <span class="keyword">this</span>-&gt;capacity = capacity;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="function"><span class="keyword">int</span> <span class="title">get</span><span class="params">(<span class="keyword">int</span> key)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(m.find(key) == m.end()) &#123;</span><br><span class="line">            <span class="keyword">return</span> <span class="number">-1</span>;</span><br><span class="line">        &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">            link.remove(key);</span><br><span class="line">            link.push_front(key);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> m[key];</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">put</span><span class="params">(<span class="keyword">int</span> key, <span class="keyword">int</span> value)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span> (m.find(key) != m.end()) &#123;       <span class="comment">//已存在</span></span><br><span class="line">            m[key] = value;</span><br><span class="line">            link.remove(key);</span><br><span class="line">            link.push_front(key);</span><br><span class="line">        &#125; <span class="keyword">else</span> &#123;                            <span class="comment">//不存在</span></span><br><span class="line">            <span class="keyword">if</span> (m.size() &gt;= capacity) &#123;</span><br><span class="line">                <span class="keyword">int</span> keyLast = link.back();</span><br><span class="line">                link.pop_back();</span><br><span class="line">                m.erase(keyLast);</span><br><span class="line">                </span><br><span class="line">                link.push_front(key);</span><br><span class="line">                m[key] = value;</span><br><span class="line">            &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                m[key] = value;</span><br><span class="line">                link.push_front(key);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;figure class=&quot;highlight c++&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;
       
     
     </summary>
