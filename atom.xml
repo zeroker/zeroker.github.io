@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-07-01T00:31:18.565Z</updated>
+  <updated>2020-07-01T00:34:12.666Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -21,15 +21,15 @@
     <link href="http://yoursite.com/2020/06/30/git/"/>
     <id>http://yoursite.com/2020/06/30/git/</id>
     <published>2020-06-30T11:31:17.000Z</published>
-    <updated>2020-07-01T00:31:18.565Z</updated>
+    <updated>2020-07-01T00:34:12.666Z</updated>
     
-    <content type="html"><![CDATA[<p><img src="image/git_sum.png" alt="R" title="T"></p>]]></content>
+    <content type="html"><![CDATA[<p><img src="/images/git_sum.png" alt="R" title="T"></p>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;p&gt;&lt;img src=&quot;image/git_sum.png&quot; alt=&quot;R&quot; title=&quot;T&quot;&gt;&lt;/p&gt;
+        &lt;p&gt;&lt;img src=&quot;/images/git_sum.png&quot; alt=&quot;R&quot; title=&quot;T&quot;&gt;&lt;/p&gt;
 
       
     
