@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-07-01T01:18:41.702Z</updated>
+  <updated>2020-07-04T15:44:14.240Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>mac chrome快捷键</title>
+    <link href="http://yoursite.com/2020/07/04/mac-chrome%E5%BF%AB%E6%8D%B7%E9%94%AE/"/>
+    <id>http://yoursite.com/2020/07/04/mac-chrome快捷键/</id>
+    <published>2020-07-04T15:42:23.000Z</published>
+    <updated>2020-07-04T15:44:14.240Z</updated>
+    
+    <content type="html"><![CDATA[<p>窗口、标签快捷键<br>0、⌘ + n           打开新窗口<br>1、⌘ + Shift + w   关闭当前窗口<br>2、⌘ + Option + 向左箭头键   跳转到上一个打开的标签页<br>3、⌘ + t           打开新的标签页，并跳转到该标签页<br>4、⌘ + Shift + t   重新打开最后关闭的标签页，并跳转到该标签页<br>5、⌘ + [ 或 ⌘ + 向左箭头键   打开当前标签页浏览记录中记录的上一个页面<br>6、⌘ + w           关闭当前标签页或弹出式窗口<br>7、⌘ + q           退出 Google Chrome</p><p>chrome 快捷键</p><p>1、⌘ + Option + b      打开书签管理器<br>2、⌘ + ,               在新标签页中打开“设置”页<br>3、⌘ + y               在新标签页中打开“历史记录”页<br>4、⌘ + Shift + j       在新标签页中打开“下载内容”页</p><p>ref: <a href="https://www.jianshu.com/p/75adf667f61a" target="_blank" rel="noopener">https://www.jianshu.com/p/75adf667f61a</a></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;窗口、标签快捷键&lt;br&gt;0、⌘ + n           打开新窗口&lt;br&gt;1、⌘ + Shift + w   关闭当前窗口&lt;br&gt;2、⌘ + Option + 向左箭头键   跳转到上一个打开的标签页&lt;br&gt;3、⌘ + t           打开新的标签页，并跳转到该
+      
+    
+    </summary>
+    
+    
+      <category term="工具箱" scheme="http://yoursite.com/tags/%E5%B7%A5%E5%85%B7%E7%AE%B1/"/>
+    
+  </entry>
   
   <entry>
     <title>Git+Iterm</title>
@@ -451,30 +474,6 @@
       
         &lt;p&gt;输入: 1-&amp;gt;2-&amp;gt;3-&amp;gt;3-&amp;gt;4-&amp;gt;4-&amp;gt;5&lt;br&gt;输出: 1-&amp;gt;2-&amp;gt;5&lt;/p&gt;
 &lt;figure class=&quot;highlight c++&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span
-      
-    
-    </summary>
-    
-    
-      <category term="算法" scheme="http://yoursite.com/tags/%E7%AE%97%E6%B3%95/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>k个一组翻转链表</title>
-    <link href="http://yoursite.com/2019/07/26/k%E4%B8%AA%E4%B8%80%E7%BB%84%E7%BF%BB%E8%BD%AC%E9%93%BE%E8%A1%A8/"/>
-    <id>http://yoursite.com/2019/07/26/k个一组翻转链表/</id>
-    <published>2019-07-26T01:27:27.000Z</published>
-    <updated>2019-07-26T01:28:22.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>给你一个链表，每 k 个节点一组进行翻转，请你返回翻转后的链表。<br>k 是一个正整数，它的值小于或等于链表的长度。<br>如果节点总数不是 k 的整数倍，那么请将最后剩余的节点保持原有顺序。</p><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function">ListNode* <span class="title">reverse</span><span class="params">(ListNode* root)</span> </span>&#123;</span><br><span class="line">        ListNode* pre = <span class="literal">NULL</span>;</span><br><span class="line">        ListNode* node = root;</span><br><span class="line">        ListNode* next;</span><br><span class="line">        <span class="keyword">while</span> (node != <span class="literal">NULL</span>) &#123;</span><br><span class="line">            next = node-&gt;next;</span><br><span class="line">            node-&gt;next = pre;</span><br><span class="line">            pre = node;</span><br><span class="line">            node = next;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> pre;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="function">ListNode* <span class="title">reverseKGroup</span><span class="params">(ListNode* head, <span class="keyword">int</span> k)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span> (head == <span class="literal">NULL</span> || head-&gt;next == <span class="literal">NULL</span> || k == <span class="number">1</span>) <span class="keyword">return</span> head;</span><br><span class="line">        ListNode* result = <span class="keyword">new</span> ListNode(<span class="number">-1</span>);</span><br><span class="line">        ListNode* r = result;</span><br><span class="line">        </span><br><span class="line">        <span class="keyword">while</span> (head != <span class="literal">NULL</span>) &#123;</span><br><span class="line">            <span class="keyword">int</span> i;</span><br><span class="line">            ListNode* start = head;</span><br><span class="line">            ListNode* next;</span><br><span class="line">            <span class="keyword">for</span> (i = <span class="number">1</span>; i &lt; k &amp;&amp; head != <span class="literal">NULL</span>; i++) head = head-&gt;next;</span><br><span class="line">            <span class="keyword">if</span> (i &lt;= k &amp;&amp; head == <span class="literal">NULL</span>) &#123;</span><br><span class="line">                r-&gt;next = start;</span><br><span class="line">                <span class="keyword">break</span>;</span><br><span class="line">            &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                next = head-&gt;next;</span><br><span class="line">                head-&gt;next = <span class="literal">NULL</span>;</span><br><span class="line">                r-&gt;next = reverse(start);</span><br><span class="line">                r = start;</span><br><span class="line">                head = next;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> result-&gt;next;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;给你一个链表，每 k 个节点一组进行翻转，请你返回翻转后的链表。&lt;br&gt;k 是一个正整数，它的值小于或等于链表的长度。&lt;br&gt;如果节点总数不是 k 的整数倍，那么请将最后剩余的节点保持原有顺序。&lt;/p&gt;
-&lt;figure class=&quot;highlight c++&quot;&gt;&lt;tabl
       
     
     </summary>
