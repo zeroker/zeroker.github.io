@@ -102,18 +102,18 @@
 
 
 
-  <meta name="description" content="优化1 没有进行过交换结束优化2 通过记录最后交换的位置，及终点的位置优化3 波浪排序+优化1+优化21234567891011121314151617181920212223242526272829303132333435363738394041#if 0#include&amp;lt;bits/stdc++.h&amp;gt;                       using namespace std">
-<meta name="keywords" content="算法">
+  <meta name="description" content="HHKB 中英文； control+ space大小写 shift +. Or fn + table 上下左右： opt. + ijkl. Or fn + 上下左右启动台 comand  + 0切换桌面 opt + control + ijkl 删除 control + d or. control + h跳到行首：control + a  跳到行尾: control + e google切换页面">
+<meta name="keywords" content="工具">
 <meta property="og:type" content="article">
-<meta property="og:title" content="冒泡优化">
-<meta property="og:url" content="http://yoursite.com/2019/07/17/冒泡优化/index.html">
+<meta property="og:title" content="HHKB">
+<meta property="og:url" content="http://yoursite.com/2021/08/08/HHKB/index.html">
 <meta property="og:site_name" content="Q同學&#39;s world">
-<meta property="og:description" content="优化1 没有进行过交换结束优化2 通过记录最后交换的位置，及终点的位置优化3 波浪排序+优化1+优化21234567891011121314151617181920212223242526272829303132333435363738394041#if 0#include&amp;lt;bits/stdc++.h&amp;gt;                       using namespace std">
+<meta property="og:description" content="HHKB 中英文； control+ space大小写 shift +. Or fn + table 上下左右： opt. + ijkl. Or fn + 上下左右启动台 comand  + 0切换桌面 opt + control + ijkl 删除 control + d or. control + h跳到行首：control + a  跳到行尾: control + e google切换页面">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-07-17T10:16:52.000Z">
+<meta property="og:updated_time" content="2021-08-08T09:05:50.532Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="冒泡优化">
-<meta name="twitter:description" content="优化1 没有进行过交换结束优化2 通过记录最后交换的位置，及终点的位置优化3 波浪排序+优化1+优化21234567891011121314151617181920212223242526272829303132333435363738394041#if 0#include&amp;lt;bits/stdc++.h&amp;gt;                       using namespace std">
+<meta name="twitter:title" content="HHKB">
+<meta name="twitter:description" content="HHKB 中英文； control+ space大小写 shift +. Or fn + table 上下左右： opt. + ijkl. Or fn + 上下左右启动台 comand  + 0切换桌面 opt + control + ijkl 删除 control + d or. control + h跳到行首：control + a  跳到行尾: control + e google切换页面">
 
 
 
@@ -122,7 +122,7 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2019/07/17/冒泡优化/">
+  <link rel="canonical" href="http://yoursite.com/2021/08/08/HHKB/">
 
 
 
@@ -132,7 +132,7 @@
   };
 </script>
 
-  <title>冒泡优化 | Q同學's world</title>
+  <title>HHKB | Q同學's world</title>
   
 
 
@@ -298,7 +298,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/07/17/冒泡优化/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2021/08/08/HHKB/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Q-同學">
@@ -315,7 +315,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">冒泡优化
+          <h1 class="post-title" itemprop="name headline">HHKB
               
             
           </h1>
@@ -340,7 +340,7 @@
                 
               
 
-              <time title="创建时间：2019-07-17 18:12:20 / 修改时间：18:16:52" itemprop="dateCreated datePublished" datetime="2019-07-17T18:12:20+08:00">2019-07-17</time>
+              <time title="创建时间：2021-08-08 17:04:10 / 修改时间：17:05:50" itemprop="dateCreated datePublished" datetime="2021-08-08T17:04:10+08:00">2021-08-08</time>
             
 
             
@@ -378,8 +378,12 @@
       
 
       
-        <p>优化1 没有进行过交换结束<br>优化2 通过记录最后交换的位置，及终点的位置<br>优化3 波浪排序+优化1+优化2<br><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">if</span> 0</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;bits/stdc++.h&gt;                       </span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;                      </span><br><span class="line"><span class="keyword">int</span> a[<span class="number">10000</span>];</span><br><span class="line"><span class="keyword">int</span> n;</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">sort</span><span class="params">(<span class="keyword">int</span> a[], <span class="keyword">int</span> n)</span> </span>&#123;</span><br><span class="line">	<span class="keyword">bool</span> flag = <span class="number">0</span>;</span><br><span class="line">	<span class="keyword">int</span> k = n<span class="number">-1</span>;</span><br><span class="line">	<span class="keyword">int</span> last;</span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; n<span class="number">-1</span>; i++) &#123;</span><br><span class="line">		flag = <span class="number">0</span>;</span><br><span class="line">		<span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">0</span>; j &lt; k; j++) &#123;</span><br><span class="line">			sum++;</span><br><span class="line">			<span class="keyword">if</span> (a[j] &gt; a[j+<span class="number">1</span>]) &#123;</span><br><span class="line">				flag = <span class="number">1</span>;</span><br><span class="line">				last = j;</span><br><span class="line">				swap(a[j], a[j+<span class="number">1</span>]);</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">if</span> (flag == <span class="number">0</span>) &#123;</span><br><span class="line">			<span class="keyword">break</span>;</span><br><span class="line">		&#125;</span><br><span class="line">		k = last;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="keyword">while</span>(<span class="number">1</span>) &#123;</span><br><span class="line">		sum = <span class="number">0</span>;</span><br><span class="line">		<span class="built_in">cin</span>&gt;&gt;n;</span><br><span class="line">		<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; n; i++) &#123;</span><br><span class="line">			a[i] = rand() % n;</span><br><span class="line">		&#125;		</span><br><span class="line">		sort(a, n);</span><br><span class="line">		<span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; n; i++)</span><br><span class="line">			 <span class="built_in">cout</span>&lt;&lt;a[i]&lt;&lt;<span class="string">" "</span>; </span><br><span class="line">	</span><br><span class="line">	&#125;</span><br><span class="line">&#125; </span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="meta-keyword">endif</span></span></span><br></pre></td></tr></table></figure></p>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">if</span> 0                      <span class="comment">//波浪排序 就上两种优化</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="keyword">int</span> a[<span class="number">100000</span>],n;</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">sort</span><span class="params">(<span class="keyword">int</span> a[], <span class="keyword">int</span> n)</span> </span>&#123;</span><br><span class="line">	<span class="keyword">int</span> left = <span class="number">0</span>, right = n<span class="number">-1</span>;</span><br><span class="line">	<span class="keyword">int</span> flag = <span class="number">0</span>;</span><br><span class="line">	<span class="keyword">int</span> last;</span><br><span class="line">	<span class="keyword">while</span> (left &lt; right) &#123;</span><br><span class="line">		<span class="keyword">for</span> (<span class="keyword">int</span> i = left; i &lt; right; i++) &#123;</span><br><span class="line">			sum++;</span><br><span class="line">			<span class="keyword">if</span> (a[i] &gt; a[i+<span class="number">1</span>]) &#123;</span><br><span class="line">				swap(a[i], a[i+<span class="number">1</span>]);</span><br><span class="line">				flag = <span class="number">1</span>;</span><br><span class="line">				last = i;</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">if</span> (flag == <span class="number">0</span>) <span class="keyword">break</span>;</span><br><span class="line">		right = last;</span><br><span class="line">		flag = <span class="number">0</span>;</span><br><span class="line">		<span class="keyword">for</span> (<span class="keyword">int</span> j = last; j &gt; left; j--) &#123;</span><br><span class="line">			sum++;</span><br><span class="line">			<span class="keyword">if</span> (a[j] &lt; a[j<span class="number">-1</span>]) &#123;</span><br><span class="line">				swap(a[j], a[j<span class="number">-1</span>]);</span><br><span class="line">				flag = <span class="number">1</span>;</span><br><span class="line">				last = j;</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">if</span> (flag == <span class="number">0</span>) <span class="keyword">break</span>;</span><br><span class="line">		left = last;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="keyword">while</span>(<span class="number">1</span>) &#123;</span><br><span class="line">		<span class="built_in">cin</span>&gt;&gt;n;</span><br><span class="line">		<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; n; i++) &#123;</span><br><span class="line">			a[i] = rand() % n;</span><br><span class="line">		&#125;		</span><br><span class="line">		sort(a, n);</span><br><span class="line">		<span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; n; i++)</span><br><span class="line">			 <span class="built_in">cout</span>&lt;&lt;a[i]&lt;&lt;<span class="string">" "</span>; </span><br><span class="line">	</span><br><span class="line">	&#125;</span><br><span class="line">&#125;  </span><br><span class="line"><span class="meta">#<span class="meta-keyword">endif</span></span></span><br></pre></td></tr></table></figure>
+        <p>HHKB</p>
+<p>中英文； control+ space<br>大小写 shift +. Or fn + table</p>
+<p>上下左右： opt. + ijkl. Or fn + 上下左右<br>启动台 comand  + 0<br>切换桌面 opt + control + ijkl</p>
+<p>删除 control + d or. control + h<br>跳到行首：control + a  跳到行尾: control + e</p>
+<p>google<br>切换页面 command + control + []</p>
+<p>Item<br>切换页面 command + []</p>
 
       
     </div>
@@ -400,9 +404,9 @@
       
         <div class="post-tags">
           
-            <a href="/tags/算法/" rel="tag">
+            <a href="/tags/工具/" rel="tag">
             #
-            算法</a>
+            工具</a>
           
         </div>
       
@@ -415,8 +419,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/07/16/链表-排序/" rel="next" title="链表|排序">
-                <i class="fa fa-chevron-left"></i> 链表|排序
+              <a href="/2021/08/08/霍乱时期的爱情/" rel="next" title="霍乱时期的爱情">
+                <i class="fa fa-chevron-left"></i> 霍乱时期的爱情
               </a>
             
           </div>
@@ -424,10 +428,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2019/07/25/快速排序三数取中/" rel="prev" title="快速排序三数取中">
-                快速排序三数取中 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>

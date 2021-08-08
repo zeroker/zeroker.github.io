@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2021-08-08T08:48:31.727Z</updated>
+  <updated>2021-08-08T09:05:50.532Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>HHKB</title>
+    <link href="http://yoursite.com/2021/08/08/HHKB/"/>
+    <id>http://yoursite.com/2021/08/08/HHKB/</id>
+    <published>2021-08-08T09:04:10.000Z</published>
+    <updated>2021-08-08T09:05:50.532Z</updated>
+    
+    <content type="html"><![CDATA[<p>HHKB</p><p>中英文； control+ space<br>大小写 shift +. Or fn + table</p><p>上下左右： opt. + ijkl. Or fn + 上下左右<br>启动台 comand  + 0<br>切换桌面 opt + control + ijkl</p><p>删除 control + d or. control + h<br>跳到行首：control + a  跳到行尾: control + e</p><p>google<br>切换页面 command + control + []</p><p>Item<br>切换页面 command + []</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;HHKB&lt;/p&gt;
+&lt;p&gt;中英文； control+ space&lt;br&gt;大小写 shift +. Or fn + table&lt;/p&gt;
+&lt;p&gt;上下左右： opt. + ijkl. Or fn + 上下左右&lt;br&gt;启动台 comand  + 0&lt;br&gt;切换桌面 opt + con
+      
+    
+    </summary>
+    
+    
+      <category term="工具" scheme="http://yoursite.com/tags/%E5%B7%A5%E5%85%B7/"/>
+    
+  </entry>
   
   <entry>
     <title>霍乱时期的爱情</title>
@@ -444,29 +469,6 @@
     <updated>2019-07-26T02:31:28.000Z</updated>
     
     <content type="html"><![CDATA[<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * Definition for a binary tree node.</span></span><br><span class="line"><span class="comment"> * struct c &#123;</span></span><br><span class="line"><span class="comment"> *     int val;</span></span><br><span class="line"><span class="comment"> *     TreeNode *left;</span></span><br><span class="line"><span class="comment"> *     TreeNode *right;</span></span><br><span class="line"><span class="comment"> *     TreeNode(int x) : val(x), left(NULL), right(NULL) &#123;&#125;</span></span><br><span class="line"><span class="comment"> * &#125;;</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    TreeNode* result;</span><br><span class="line">    <span class="function"><span class="keyword">bool</span> <span class="title">isInside</span><span class="params">(TreeNode* root, TreeNode* p, TreeNode* q)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span> (root == <span class="literal">NULL</span>) &#123;</span><br><span class="line">            <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">bool</span> left, right;</span><br><span class="line">        left = isInside(root-&gt;left, p, q);</span><br><span class="line">        right = isInside(root-&gt;right, p, q);</span><br><span class="line">        <span class="keyword">if</span> ((right &amp;&amp; left) || ((root == p || root == q) &amp;&amp; (left || right))) &#123;</span><br><span class="line">             result = root;</span><br><span class="line">             <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">         &#125;</span><br><span class="line">         <span class="keyword">if</span> (left || right || root == p || root == q)</span><br><span class="line">             <span class="keyword">return</span> <span class="number">1</span>;</span><br><span class="line">         <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function">TreeNode* <span class="title">lowestCommonAncestor</span><span class="params">(TreeNode* root, TreeNode* p, TreeNode* q)</span> </span>&#123;</span><br><span class="line">        isInside(root, p, q);</span><br><span class="line">        <span class="keyword">return</span> result;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;figure class=&quot;highlight c++&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;
-      
-    
-    </summary>
-    
-    
-      <category term="算法" scheme="http://yoursite.com/tags/%E7%AE%97%E6%B3%95/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>一个进栈的所有出栈序列</title>
-    <link href="http://yoursite.com/2019/07/26/%E4%B8%80%E4%B8%AA%E8%BF%9B%E6%A0%88%E7%9A%84%E6%89%80%E6%9C%89%E5%87%BA%E6%A0%88%E5%BA%8F%E5%88%97/"/>
-    <id>http://yoursite.com/2019/07/26/一个进栈的所有出栈序列/</id>
-    <published>2019-07-26T01:53:17.000Z</published>
-    <updated>2019-07-26T02:03:12.000Z</updated>
-    
-    <content type="html"><![CDATA[<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//给出出栈顺序  求所有进栈的序列 || 给出入栈顺序 求出栈顺序 </span></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">print</span><span class="params">(<span class="built_in">stack</span>&lt;<span class="keyword">int</span>&gt; v)</span> </span>&#123; </span><br><span class="line"><span class="keyword">while</span> (v.size() != <span class="number">0</span>) &#123;</span><br><span class="line"><span class="built_in">cout</span>&lt;&lt;v.top()&lt;&lt;<span class="string">" "</span>;</span><br><span class="line">v.pop();</span><br><span class="line">&#125;</span><br><span class="line"><span class="built_in">cout</span>&lt;&lt;<span class="built_in">endl</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//a存放入栈序列，b模拟入栈， c存放可能的出栈的序列</span></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">dfs</span><span class="params">(<span class="built_in">stack</span>&lt;<span class="keyword">int</span>&gt; a, <span class="built_in">stack</span>&lt;<span class="keyword">int</span>&gt; b, <span class="built_in">stack</span>&lt;<span class="keyword">int</span>&gt; c)</span> </span>&#123;           </span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> (a.size() == <span class="number">0</span> &amp;&amp; b.size() == <span class="number">0</span> ) &#123;</span><br><span class="line">print(c);</span><br><span class="line"><span class="keyword">return</span>;</span><br><span class="line">&#125; </span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> (a.size() != <span class="number">0</span>) &#123;<span class="comment">//入栈 </span></span><br><span class="line"><span class="keyword">int</span> val = a.top();</span><br><span class="line">b.push(val);</span><br><span class="line">a.pop();</span><br><span class="line">dfs(a, b, c);</span><br><span class="line">b.pop();</span><br><span class="line">a.push(val);</span><br><span class="line">&#125; </span><br><span class="line"><span class="keyword">if</span> (b.size() != <span class="number">0</span>) &#123;<span class="comment">//出栈 </span></span><br><span class="line"><span class="keyword">int</span> val = b.top();</span><br><span class="line">c.push(val);</span><br><span class="line">b.pop();</span><br><span class="line">dfs(a, b, c);</span><br><span class="line">c.pop();</span><br><span class="line">b.push(val);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">return</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
     
     <summary type="html">
     
