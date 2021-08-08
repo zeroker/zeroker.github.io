@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-07-25T11:39:35.736Z</updated>
+  <updated>2021-08-08T07:39:30.739Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>相约星期二</title>
+    <link href="http://yoursite.com/2021/08/08/%E7%9B%B8%E7%BA%A6%E6%98%9F%E6%9C%9F%E4%BA%8C/"/>
+    <id>http://yoursite.com/2021/08/08/相约星期二/</id>
+    <published>2021-08-08T07:37:58.000Z</published>
+    <updated>2021-08-08T07:39:30.739Z</updated>
+    
+    <content type="html"><![CDATA[<p>一个社会学教授，一个体育新闻播报员的学生。社会学教授：母亲很早的去世了，父亲也比较的冷淡的对待家庭，整体上来说是一个挺不幸的一个人，后面也是用其一生去产出爱，维护爱。<br>作为一个面对死神的一个活泼的、健康的的社会学教授，面对爱情、社会、家庭、感情、原谅、工作、生活是一种什么样的态度？面对社会、面对家庭、面对感情是否要坦诚相对。<br>一个人在生活的意义是什么？为了事业？为了金钱？为了物欲？为了名声？为了地位？为了？？？短期来看，为了房子？还是为了车子？ 这些东西是否是社会外界压力强制push给你的？这些是你想要的么？花了很多时间，很多钱买的房子就是为了买一个安全感？ 那么一个人真正的安全感是谁给的呢？一个人的内心深处受家庭的爱影响有多大呢？我想抛去了金钱，一个家庭，一个组织，真诚，“爱”才能让彼此感受到真正的安全感，人与人之间的坦诚和爱、或者可以说是善意我想也是人应该作为社会属性应该有的一种东西。<br>那么我们穷极一生，追寻我们一生挚爱，保护我们一生挚爱，我们穷极一生去履行我们的责任、义务去保护我们相爱的人的时候，其实无形之间成员与成员之间的信任感，互相的爱，我想这才是一个人一生中最值得骄傲的东西，也是在家族历史上，在社会上最坚实的力量（ 物质方面在此面前略显暗淡）；<br>那么除去爱｜家庭，社会还赋予了我们其他的属性，在社会中的工作，无论是当程序员，还是货代，我们是否找到了我们存在的价值，我们是否认可我们的工作对这个世界是有正向作用的？ 改变世界或许很空洞，什么叫改变世界了？改变别人的生活习惯，让人们生活的更加方便，打压掉一些**内容，让人们生活在一片祥和、安全的社会环境之中； 再或者发布一个足以改变现有规则的一款产品，改变世界的口径或许不需要别人来评价，或许不需要第三视角，只要我们真诚的问一下我们的内心，你今天改变世界了么？ 你的工作是否有意义呢？<br>除去爱与工作，生活方面是否需要去做点什么呢？ 我们抛去了繁忙的工作，在改变世界之余，是否有点个人的兴趣爱好？ 去做一些让自己真正有肾上腺素的东西，真实激动，兴奋的事情。目前好像没找到，不过，个人挺喜欢读书，和旅行的，后面是否可以拾起学习英语的兴趣呢，兴趣也是可以慢慢培养的嘛，也是为了后面环球旅行做准备呢<br>……<br>最后这个教授是以一个马上要死的一个人的视角去讲述的，作为一个将要去世的人，他的内心独白，仍然要把这种“爱”传播给身边的人，愿意和身边亲密的人做一些互动。思考一下，如果处于这个角色中，你来回看你的现在，有什么事情是你非做不可的呢？又有什么事情是你放心不下的呢？你的时间会如何处理呢？</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;一个社会学教授，一个体育新闻播报员的学生。社会学教授：母亲很早的去世了，父亲也比较的冷淡的对待家庭，整体上来说是一个挺不幸的一个人，后面也是用其一生去产出爱，维护爱。&lt;br&gt;作为一个面对死神的一个活泼的、健康的的社会学教授，面对爱情、社会、家庭、感情、原谅、工作、生活是一种
+      
+    
+    </summary>
+    
+    
+      <category term="读书笔记" scheme="http://yoursite.com/tags/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
+    
+  </entry>
   
   <entry>
     <title>linux基本命令整理</title>
@@ -450,29 +473,6 @@
       
         &lt;p&gt;给定一个二叉树，原地将它展开为链表。&lt;br&gt;例如，给定二叉树&lt;br&gt;    1&lt;br&gt;   / \&lt;br&gt;  2   5&lt;br&gt; / \   \&lt;br&gt;3   4   6&lt;br&gt;展开为：&lt;br&gt;1-2-3-4-5-6&lt;/p&gt;
 &lt;figure class=&quot;highlight
-      
-    
-    </summary>
-    
-    
-      <category term="算法" scheme="http://yoursite.com/tags/%E7%AE%97%E6%B3%95/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>环形链表</title>
-    <link href="http://yoursite.com/2019/07/26/%E7%8E%AF%E5%BD%A2%E9%93%BE%E8%A1%A8/"/>
-    <id>http://yoursite.com/2019/07/26/环形链表/</id>
-    <published>2019-07-26T01:29:52.000Z</published>
-    <updated>2019-07-26T04:44:16.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>一个含有循环链表的链表怎么求它开始循环的入口？<br>给出一个循环链表的例子：<br>1-&gt;2-&gt;3-&gt;4-&gt;5-&gt;3  最后5又指向了3，也就是说3-&gt;4-&gt;5-&gt;3形成了一个环<br>假设非环形的长度是x, 环形的长度是y, 链表总长度是n = x + y<br>思路：<br>两个指针， fast一次走两步， slow一次走一步， 总有一次他们会在环的某一个位置相遇。<br>于是可以列出关系表达式：<br>fast = 2slow (一个走一步，一个走两步，走了相同的时间)<br>fast = slow + n<em>y (fast比slow多走了n圈的环)<br>2slow = slow + n</em>y -&gt; slow = n<em>y<br>得出了关键的表达式： slow = n</em>y, 假设一下slow处于环形起点的时候，n*y 圈之后还会回到起点。但是，slow是从链表的起点开始的，所以从入口要回退x步， 就是fast和slow相遇的点， 也就是说 非环形的链表长度x 等于 fast和slow最后相遇的节点到环形入口的长度。</p><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function">ListNode *<span class="title">detectCycle</span><span class="params">(ListNode *head)</span> </span>&#123;</span><br><span class="line">        ListNode* fast = head;</span><br><span class="line">        ListNode* slow = head;</span><br><span class="line">        </span><br><span class="line">        <span class="keyword">while</span> (fast != <span class="literal">NULL</span> &amp;&amp; fast-&gt;next != <span class="literal">NULL</span>) &#123;</span><br><span class="line">            fast = fast-&gt;next-&gt;next;</span><br><span class="line">            slow = slow-&gt;next;</span><br><span class="line">            <span class="keyword">if</span> (fast == slow) &#123;</span><br><span class="line">                <span class="keyword">break</span>;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span> (fast == <span class="literal">NULL</span> || fast-&gt;next == <span class="literal">NULL</span>) </span><br><span class="line">            <span class="keyword">return</span> <span class="literal">NULL</span>; </span><br><span class="line">        fast = head;</span><br><span class="line">   </span><br><span class="line">        <span class="keyword">while</span>(fast != slow) &#123;</span><br><span class="line">            fast = fast-&gt;next;</span><br><span class="line">            slow = slow-&gt;next;</span><br><span class="line">        &#125; </span><br><span class="line">        <span class="keyword">return</span> fast;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;一个含有循环链表的链表怎么求它开始循环的入口？&lt;br&gt;给出一个循环链表的例子：&lt;br&gt;1-&amp;gt;2-&amp;gt;3-&amp;gt;4-&amp;gt;5-&amp;gt;3  最后5又指向了3，也就是说3-&amp;gt;4-&amp;gt;5-&amp;gt;3形成了一个环&lt;br&gt;假设非环形的长度是x, 环形的长度是y
       
     
     </summary>
