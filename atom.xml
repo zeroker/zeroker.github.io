@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2021-08-08T07:39:30.739Z</updated>
+  <updated>2021-08-08T08:48:31.727Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>霍乱时期的爱情</title>
+    <link href="http://yoursite.com/2021/08/08/%E9%9C%8D%E4%B9%B1%E6%97%B6%E6%9C%9F%E7%9A%84%E7%88%B1%E6%83%85/"/>
+    <id>http://yoursite.com/2021/08/08/霍乱时期的爱情/</id>
+    <published>2021-08-08T08:46:49.000Z</published>
+    <updated>2021-08-08T08:48:31.727Z</updated>
+    
+    <content type="html"><![CDATA[<p>霍乱时期的爱情</p><p><a href="https://www.zhihu.com/question/274223889/answer/1617314344" target="_blank" rel="noopener">https://www.zhihu.com/question/274223889/answer/1617314344</a></p><p>  看完了全书，仿佛自己过了 N 遍人生，也仿佛过了一生，仿佛看到了自己，但自己也没有弗洛伦蒂诺 那么守着一生的精神上的童贞，最后我看上面的分享说的挺好的，全书最幸运的一个人，就是女主角费尔明娜，一生都不懂爱情，却被爱情眷顾了一生。</p><p>爱情： 是合适的生活？ 获取世俗的安全感？既然合适的在一起不是爱情，那，真正的爱情是什么？ 是那惊鸿一瞥？是那一瞬间的回望，那虚无缥缈的东西，渐渐被神话的了鲜花女神？ 最后，我想 费尔明娜和乌尔比诺医生 的相遇结合，也是挺好的，但是，没有爱的结合，没有爱的驱使，我们靠什么去维持一个家，维护彼此？盲目的责任？ 就像乌尔比诺医生和芭芭拉•林奇小姐的一见倾心，是否也是普罗大众 身在迷宫中的一种探索呢？ 探索自己不敢违背世俗，探索自己内心深处的一颗种子。<br>我想，每个时代的每个人每个阶段想要的东西不一样，对于爱情的定义也不一样吧，尤其对于普罗大众来说，爱情这种东西好像是可遇不可求的东西？为啥这么说？我想每个人都有每个人自己的答案，但是我觉的霍乱时期的爱情的作者 加西亚•马尔克斯 帮助我们普罗大众把爱情给总结了一下，也不算总结，带我们观摩，参观了一下世间百态的爱情，也许真正的爱情对于我们普罗大众来说 是没有勇气的，世间有几个弗洛伦蒂诺。 况且，在世俗中，我们甘心 做一个精神上的和尚么？在精神上为心爱的等上一辈子？ 这可能也是为啥 普罗大众普通而又平凡并且还会迷茫的原因吧。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;霍乱时期的爱情&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.zhihu.com/question/274223889/answer/1617314344&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://www.zhihu.com/
+      
+    
+    </summary>
+    
+    
+      <category term="读书笔记" scheme="http://yoursite.com/tags/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
+    
+  </entry>
   
   <entry>
     <title>相约星期二</title>
@@ -449,30 +473,6 @@
       
       
         &lt;figure class=&quot;highlight c++&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;
-      
-    
-    </summary>
-    
-    
-      <category term="算法" scheme="http://yoursite.com/tags/%E7%AE%97%E6%B3%95/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>二叉树展开成链表</title>
-    <link href="http://yoursite.com/2019/07/26/%E4%BA%8C%E5%8F%89%E6%A0%91%E5%B1%95%E5%BC%80%E6%88%90%E9%93%BE%E8%A1%A8/"/>
-    <id>http://yoursite.com/2019/07/26/二叉树展开成链表/</id>
-    <published>2019-07-26T01:49:36.000Z</published>
-    <updated>2019-07-26T03:44:34.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>给定一个二叉树，原地将它展开为链表。<br>例如，给定二叉树<br>    1<br>   / \<br>  2   5<br> / \   \<br>3   4   6<br>展开为：<br>1-2-3-4-5-6</p><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * Definition for a binary tree node.</span></span><br><span class="line"><span class="comment"> * struct TreeNode &#123;</span></span><br><span class="line"><span class="comment"> *     int val;</span></span><br><span class="line"><span class="comment"> *     TreeNode *left;</span></span><br><span class="line"><span class="comment"> *     TreeNode *right;</span></span><br><span class="line"><span class="comment"> *     TreeNode(int x) : val(x), left(NULL), right(NULL) &#123;&#125;</span></span><br><span class="line"><span class="comment"> * &#125;;</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    TreeNode* last;</span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">flatten</span><span class="params">(TreeNode* root)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span> (root == <span class="literal">NULL</span>) <span class="keyword">return</span>;</span><br><span class="line">        flatten(root-&gt;right);</span><br><span class="line">        flatten(root-&gt;left);</span><br><span class="line">        root-&gt;right = last;</span><br><span class="line">        root-&gt;left = <span class="literal">NULL</span>;</span><br><span class="line">        last = root;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure><p>链接：<a href="https://leetcode-cn.com/problems/flatten-binary-tree-to-linked-list" target="_blank" rel="noopener">https://leetcode-cn.com/problems/flatten-binary-tree-to-linked-list</a></p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;给定一个二叉树，原地将它展开为链表。&lt;br&gt;例如，给定二叉树&lt;br&gt;    1&lt;br&gt;   / \&lt;br&gt;  2   5&lt;br&gt; / \   \&lt;br&gt;3   4   6&lt;br&gt;展开为：&lt;br&gt;1-2-3-4-5-6&lt;/p&gt;
-&lt;figure class=&quot;highlight
       
     
     </summary>
