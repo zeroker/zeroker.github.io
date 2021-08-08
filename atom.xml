@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2021-08-08T09:05:50.532Z</updated>
+  <updated>2021-08-08T15:41:25.646Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="http://yoursite.com/2021/08/08/HHKB/"/>
     <id>http://yoursite.com/2021/08/08/HHKB/</id>
     <published>2021-08-08T09:04:10.000Z</published>
-    <updated>2021-08-08T09:05:50.532Z</updated>
+    <updated>2021-08-08T15:41:25.646Z</updated>
     
     <content type="html"><![CDATA[<p>HHKB</p><p>中英文； control+ space<br>大小写 shift +. Or fn + table</p><p>上下左右： opt. + ijkl. Or fn + 上下左右<br>启动台 comand  + 0<br>切换桌面 opt + control + ijkl</p><p>删除 control + d or. control + h<br>跳到行首：control + a  跳到行尾: control + e</p><p>google<br>切换页面 command + control + []</p><p>Item<br>切换页面 command + []</p>]]></content>
     
@@ -37,7 +37,7 @@
     </summary>
     
     
-      <category term="工具" scheme="http://yoursite.com/tags/%E5%B7%A5%E5%85%B7/"/>
+      <category term="工具箱" scheme="http://yoursite.com/tags/%E5%B7%A5%E5%85%B7%E7%AE%B1/"/>
     
   </entry>
   
