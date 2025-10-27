@@ -1,0 +1,14 @@
+﻿  MFC123.cpp
+  MFC123View.cpp
+c:\users\zk\source\repos\mfc123\mfc123\mfc123view.cpp(208): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
+c:\users\zk\source\repos\mfc123\mfc123\mfc123view.cpp(173): warning C4101: “bb”: 未引用的局部变量
+c:\users\zk\source\repos\mfc123\mfc123\mfc123view.cpp(281): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
+c:\users\zk\source\repos\mfc123\mfc123\mfc123view.cpp(250): warning C4101: “bb”: 未引用的局部变量
+c:\users\zk\source\repos\mfc123\mfc123\mfc123view.cpp(339): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
+c:\users\zk\source\repos\mfc123\mfc123\mfc123view.cpp(316): warning C4101: “bb”: 未引用的局部变量
+c:\users\zk\source\repos\mfc123\mfc123\mfc123view.cpp(483): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
+c:\users\zk\source\repos\mfc123\mfc123\mfc123view.cpp(449): warning C4101: “bb”: 未引用的局部变量
+c:\users\zk\source\repos\mfc123\mfc123\mfc123view.cpp(545): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
+c:\users\zk\source\repos\mfc123\mfc123\mfc123view.cpp(518): warning C4101: “bb”: 未引用的局部变量
+  正在生成代码...
+  MFC123.vcxproj -> C:\Users\zk\source\repos\MFC123\Debug\MFC123.exe
