@@ -90,29 +90,6 @@
   </entry>
   
   <entry>
-    <title>人类简史</title>
-    <link href="https://zeroker.github.io/2025/10/28/%E4%BA%BA%E7%B1%BB%E7%AE%80%E5%8F%B2/"/>
-    <id>https://zeroker.github.io/2025/10/28/人类简史/</id>
-    <published>2025-10-27T17:10:58.000Z</published>
-    <updated>2025-10-27T17:13:58.013Z</updated>
-    
-    <content type="html"><![CDATA[<p>要我写书评：“这是一本一口气读完，只能说爽的书”<br>我想如果在20岁的时候读完这本书，我20-25岁的时候会不会还特别简单的相信，那个时候 信仰的乔帮主改变世界的价值观， 信仰硅谷钢铁侠这个硬汉 推动人类能源革命 星际探索的能量，用一股不知道哪里来的力量走进互联网，认为自己也可以用偏执的力量去改变这个世界，只不过改变世界这个定义 是自己偷偷跟自己说的，并且让自己相信。 如果那个时候看完，或许自己的知识体系会搭建的更系统一些，知道这些执着的相信 或者自己之前说不清的感受 该放在哪个储物柜里面，之后再是怀疑思考当初的简单的相信。But anyway ，或许正是 我在岛屿读书 节目中所说，每个人都有和一本书的缘分，只是这缘分就是刚刚好。 如果没有在互联网工作这几年的心路历程，或许也应该切身体会不到作者的担忧。</p><p>从书名来看，这就是一本讲人类历史的书，从中学时候学历史的感受来讲，是真的枯燥… 但这本书讲的虽然是历史，又不完全是，作者更多想要解释一个萦绕我们良久的问题： 我们是谁，我们从哪里来，我们要到哪里去，这确实是个大工程。  作者通俗易懂的描述出了 物理是啥，化学是啥，生物是啥，从物理，化学 生物 的角度解释我们智人是谁 我们从哪里来。 正是智人意识觉醒之后，开启了历史这东西。这个群体又是如何漫无目的的演化，依靠相信想象的力量，让历史变得如此精彩。 这个时候我们回过头发现，我们好像进步了，但有些东西又还是那么古老而有力量。 </p><p>依赖于我们祖先的意识觉醒，我们在漫无目的发展的过程中，知识库越来越丰厚，突然发现，哎，我们好像能创造出一点不一样 好玩的东西了，当下我们就可以用意识操控非有机物了，但如果有一天我们大脑的信息甚至也可以存储在非有机物中，寄生在非有机物中，这个时候我们回过头发现，这个时候的“我们”到底是谁？ 我们要往哪里去？智人这个东西是不是需要重新定义？未来会不会还有智人这个东西？  如果朝这个方向演化，过程中我们如何打破之前的集体想象，如何构建新的想象？  细思极恐….<br>我们要往哪里去这个问题，我们自己也不知道，没想清楚。 正如作者最后的担忧，我们当下得把问题从 “我们想要变成什么？” 切换到 “我们想要什么？”</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;要我写书评：“这是一本一口气读完，只能说爽的书”&lt;br&gt;我想如果在20岁的时候读完这本书，我20-25岁的时候会不会还特别简单的相信，那个时候 信仰的乔帮主改变世界的价值观， 信仰硅谷钢铁侠这个硬汉 推动人类能源革命 星际探索的能量，用一股不知道哪里来的力量走进互联网，认为
-      
-    
-    </summary>
-    
-    
-      <category term="读书笔记" scheme="https://zeroker.github.io/tags/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
-    
-  </entry>
-  
-  <entry>
     <title>美国商业大亨传奇</title>
     <link href="https://zeroker.github.io/2025/10/28/%E7%BE%8E%E5%9B%BD%E5%95%86%E4%B8%9A%E5%A4%A7%E4%BA%A8%E4%BC%A0%E5%A5%87/"/>
     <id>https://zeroker.github.io/2025/10/28/美国商业大亨传奇/</id>
@@ -477,6 +454,32 @@
       
       
         &lt;p&gt;给定一个字符串，请你找出其中不含有重复字符的 最长子串 的长度。&lt;br&gt;简单分析：&lt;br&gt;假设给出一个字符串： abcdechjil&lt;br&gt;第一个重复字符是c, 然而如果是简单暴力的话， 第一次从a开始找，找到第一个重复字符c，break，然后下一次要从b开始找&lt;br&gt;但是
+      
+    
+    </summary>
+    
+    
+      <category term="算法" scheme="https://zeroker.github.io/tags/%E7%AE%97%E6%B3%95/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>递增顺序查找树</title>
+    <link href="https://zeroker.github.io/2019/08/04/%E9%80%92%E5%A2%9E%E9%A1%BA%E5%BA%8F%E6%9F%A5%E6%89%BE%E6%A0%91/"/>
+    <id>https://zeroker.github.io/2019/08/04/递增顺序查找树/</id>
+    <published>2019-08-04T07:21:32.000Z</published>
+    <updated>2019-08-04T10:17:34.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>给定一个树，按中序遍历重新排列树，使树中最左边的结点现在是树的根，并且每个结点没有左子结点，只有一个右子结点。<br>示例 ：</p><p>输入：[5,3,6,2,4,null,8,1,null,null,null,7,9]</p><pre><code>   5  / \3    6</code></pre><p>   / \    \<br>  2   4    8<br> /        / \<br>1        7   9</p><p>输出：[1,null,2,null,3,null,4,null,5,null,6,null,7,null,8,null,9]</p><p> 1<br>  \<br>   2<br>    \<br>     3<br>      \<br>       4<br>        \<br>         5<br>          \<br>           6<br>            \<br>             7<br>              \<br>               8<br>                \<br>                 9  </p><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * Definition for a binary tree node.</span></span><br><span class="line"><span class="comment"> * struct TreeNode &#123;</span></span><br><span class="line"><span class="comment"> *     int val;</span></span><br><span class="line"><span class="comment"> *     TreeNode *left;</span></span><br><span class="line"><span class="comment"> *     TreeNode *right;</span></span><br><span class="line"><span class="comment"> *     TreeNode(int x) : val(x), left(NULL), right(NULL) &#123;&#125;</span></span><br><span class="line"><span class="comment"> * &#125;;</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    </span><br><span class="line">    </span><br><span class="line">    <span class="function">TreeNode* <span class="title">increasingBST</span><span class="params">(TreeNode* root)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span> (root == <span class="literal">NULL</span>) <span class="keyword">return</span> root;</span><br><span class="line">        root-&gt;right = increasingBST(root-&gt;right);</span><br><span class="line">        <span class="keyword">if</span> (root-&gt;left) &#123;</span><br><span class="line">            TreeNode* left = root-&gt;left;</span><br><span class="line">            root-&gt;left = <span class="literal">NULL</span>;</span><br><span class="line">            TreeNode* node = left;</span><br><span class="line">            <span class="keyword">while</span> (node-&gt;right) &#123;</span><br><span class="line">                node = node-&gt;right;</span><br><span class="line">            &#125;</span><br><span class="line">            node-&gt;right = root;</span><br><span class="line">            <span class="keyword">return</span> increasingBST(left);</span><br><span class="line">         &#125;</span><br><span class="line">        <span class="keyword">return</span> root;</span><br><span class="line">        </span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;给定一个树，按中序遍历重新排列树，使树中最左边的结点现在是树的根，并且每个结点没有左子结点，只有一个右子结点。&lt;br&gt;示例 ：&lt;/p&gt;
+&lt;p&gt;输入：[5,3,6,2,4,null,8,1,null,null,null,7,9]&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;   5
+  /
       
     
     </summary>
