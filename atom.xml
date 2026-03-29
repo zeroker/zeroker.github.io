@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://zeroker.github.io/"/>
-  <updated>2026-03-29T13:54:20.007Z</updated>
+  <updated>2026-03-29T13:58:06.784Z</updated>
   <id>https://zeroker.github.io/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>徒手攀岩</title>
+    <link href="https://zeroker.github.io/2026/03/29/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/%E5%BE%92%E6%89%8B%E6%94%80%E5%B2%A9/"/>
+    <id>https://zeroker.github.io/2026/03/29/读书笔记/徒手攀岩/</id>
+    <published>2026-03-29T13:55:17.000Z</published>
+    <updated>2026-03-29T13:58:06.784Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="/images/alex.png" alt="R" title="T"></p><ol><li>对理想的追寻，愿意舍弃一些东西，亚历克斯，愿意为了征服那座山，舍弃一切、甚至献出生命。</li><li>在做冒险，没有安全绳，跟有安全绳是完全两个东西。在做没有安全绳冒险的时候，我们需要做好牺牲自己的准备，我们是跟山做决斗，是跟神灵，跟人类意志做决斗，当然也是跟自己做决斗。</li><li>山还是那个山，想要征服它的时候，需要做好缜密的计划、训练day by day，训练不仅仅是专业技能，体能训练，也需要进行心态训练，在征服它的时候，具备专业技能 &amp; 非常好的体能，以及非常好的状态。</li><li>关键时刻，恐惧对征服者来说，是会拖慢前进的步伐。征服过程中需要克服恐惧，无视恐惧，藐视恐惧，战胜恐惧。心无旁骛，进入心流，专注的解决当前攀岩过程中每一个小困难。</li><li>慢慢来，不着急，在状态不好的时候，能够感知到，敢于放弃，调整过后再战。</li><li>徒手攀岩其实是一个具象化的做事情的状态，我们在做大的决策的时候，追寻我们目标的时候，其实需要跟亚历克斯一样，计划、训练、专注、克服恐惧、调整心态、调整状态；</li></ol>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;img src=&quot;/images/alex.png&quot; alt=&quot;R&quot; title=&quot;T&quot;&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;对理想的追寻，愿意舍弃一些东西，亚历克斯，愿意为了征服那座山，舍弃一切、甚至献出生命。&lt;/li&gt;
+&lt;li&gt;在做冒险，没有安全绳，跟有安全绳是完全两个东西。
+      
+    
+    </summary>
+    
+      <category term="读书笔记" scheme="https://zeroker.github.io/categories/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
+    
+    
+      <category term="读书笔记" scheme="https://zeroker.github.io/tags/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
+    
+  </entry>
   
   <entry>
     <title>价值</title>
@@ -491,31 +519,6 @@
       
         &lt;p&gt;给定一个二叉树，找到其中最大的二叉搜索树（BST）子树，其中最大指的是子树节点数最多的。&lt;br&gt;输入: [10,5,15,1,8,null,7]&lt;/p&gt;
 &lt;p&gt;   10&lt;br&gt;   / \&lt;br&gt;  5  15&lt;br&gt; / \   \&lt;br&gt;1   8   7&lt;br&gt;其中
-      
-    
-    </summary>
-    
-      <category term="算法" scheme="https://zeroker.github.io/categories/%E7%AE%97%E6%B3%95/"/>
-    
-    
-      <category term="算法" scheme="https://zeroker.github.io/tags/%E7%AE%97%E6%B3%95/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>无重复字符的最长子串</title>
-    <link href="https://zeroker.github.io/2019/08/07/%E7%AE%97%E6%B3%95/%E6%97%A0%E9%87%8D%E5%A4%8D%E5%AD%97%E7%AC%A6%E7%9A%84%E6%9C%80%E9%95%BF%E5%AD%90%E4%B8%B2/"/>
-    <id>https://zeroker.github.io/2019/08/07/算法/无重复字符的最长子串/</id>
-    <published>2019-08-07T13:33:13.000Z</published>
-    <updated>2025-12-06T08:38:57.478Z</updated>
-    
-    <content type="html"><![CDATA[<p>给定一个字符串，请你找出其中不含有重复字符的 最长子串 的长度。<br>简单分析：<br>假设给出一个字符串： abcdechjil<br>第一个重复字符是c, 然而如果是简单暴力的话， 第一次从a开始找，找到第一个重复字符c，break，然后下一次要从b开始找<br>但是发现一个问题，因为b在 c的左边， 所以无论怎么样 无重复字符最长字串长度 都不会大于 从a开始遍历的长度。<br>所以，下一次直接从重复字符c的下一个字符d开始遍历就ok。<br><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//暴力伪代码</span></span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; n； i++)</span><br><span class="line">&#123;   </span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> j = i + <span class="number">1</span>; j &lt; n; j++)  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p><p>1.没用队列<br><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function"><span class="keyword">int</span> <span class="title">lengthOfLongestSubstring</span><span class="params">(<span class="built_in">string</span> s)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span> (s.size() == <span class="number">1</span>) <span class="keyword">return</span> <span class="number">1</span>;</span><br><span class="line">        <span class="built_in">map</span>&lt;<span class="keyword">char</span>,<span class="keyword">int</span>&gt; m;</span><br><span class="line">        <span class="keyword">int</span> n = s.size();</span><br><span class="line">        <span class="keyword">int</span> maxx = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">int</span> j = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; n; i++) &#123;  </span><br><span class="line">            <span class="keyword">if</span> (m.find(s[i]) != m.end()) &#123;                                  <span class="comment">//找到了</span></span><br><span class="line">                <span class="keyword">int</span> id = m[s[i]];</span><br><span class="line">                <span class="keyword">for</span> (<span class="keyword">int</span> z = j; z &lt; id; z++) &#123;</span><br><span class="line">                    m.erase(s[z]);</span><br><span class="line">                &#125;</span><br><span class="line">                maxx = max(maxx, i - j);</span><br><span class="line">                j = id + <span class="number">1</span>;</span><br><span class="line">                <span class="comment">// flag = 1;</span></span><br><span class="line">            &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                maxx = max(maxx, i - j + <span class="number">1</span>);</span><br><span class="line">            &#125;</span><br><span class="line">            m[s[i]] = i;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> maxx;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure></p><p>2.用队列<br><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function"><span class="keyword">int</span> <span class="title">lengthOfLongestSubstring</span><span class="params">(<span class="built_in">string</span> s)</span> </span>&#123;</span><br><span class="line">        <span class="built_in">queue</span>&lt;<span class="keyword">int</span>&gt; q;</span><br><span class="line">        <span class="built_in">map</span>&lt;<span class="keyword">char</span>, <span class="keyword">int</span>&gt; m;</span><br><span class="line">        <span class="keyword">int</span> maxx = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; s.size(); i++) &#123;</span><br><span class="line">            <span class="keyword">if</span> (m.find(s[i]) == m.end()) &#123;</span><br><span class="line">                q.push(s[i]);</span><br><span class="line">                m[s[i]] = <span class="number">1</span>;</span><br><span class="line">                <span class="keyword">int</span> size = q.size();</span><br><span class="line">                maxx = max(maxx, size);</span><br><span class="line">            &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                <span class="keyword">while</span> (!q.empty() &amp;&amp; q.front() != s[i]) &#123;</span><br><span class="line">                    <span class="keyword">char</span> c = q.front();</span><br><span class="line">                    q.pop();</span><br><span class="line">                    m.erase(c);</span><br><span class="line">                &#125;</span><br><span class="line">                q.pop();</span><br><span class="line">                q.push(s[i]);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> maxx;</span><br><span class="line">        </span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure></p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;给定一个字符串，请你找出其中不含有重复字符的 最长子串 的长度。&lt;br&gt;简单分析：&lt;br&gt;假设给出一个字符串： abcdechjil&lt;br&gt;第一个重复字符是c, 然而如果是简单暴力的话， 第一次从a开始找，找到第一个重复字符c，break，然后下一次要从b开始找&lt;br&gt;但是
       
     
     </summary>
